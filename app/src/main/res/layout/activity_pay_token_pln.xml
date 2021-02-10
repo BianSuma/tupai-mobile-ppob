@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_pay_token_pln"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pajakku.tupaimobile.activity.PayTokenPLNActivity">
+
+    <com.pajakku.tupaimobile.component.AppActionBar
+        android:id="@+id/paytokenpln_appactionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="@string/paytokenpln_page_title"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/paytokenpln_appactionbar"
+        android:layout_above="@+id/paytokenpln_btn_pay"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_content_pad">
+
+            <com.pajakku.tupaimobile.component.TopupWidget
+                android:id="@+id/paytokenpln_topupwidget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:id="@+id/paytokenpln_label_guide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/paytokenpln_topupwidget"
+                android:textColor="@color/label_blue_guide"
+                android:text="@string/paytokenpln_label_guide"
+                />
+            <com.pajakku.tupaimobile.component.AppEditText
+                android:id="@+id/paytokenpln_inp_nopelanggan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/paytokenpln_label_guide"
+                app:hint="@string/paytokenpln_hint_nopelanggan"
+                app:right_icon="@drawable/righticon_paytokenpln_tokenamount"
+                />
+
+            <Spinner
+                android:id="@+id/paytokenpln_spin_nominal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/paytokenpln_inp_nopelanggan"
+                />
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/paytokenpln_btn_pay"
+        style="@style/ButtonGreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/layout_content_pad"
+        android:text="@string/paytokenpln_btn_pay"
+        />
+
+</RelativeLayout>

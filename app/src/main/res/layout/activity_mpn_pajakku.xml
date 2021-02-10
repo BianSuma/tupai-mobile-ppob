@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MPNPajakkuActivity"
+    >
+
+    <!-- ACTION BAR -->
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:id="@+id/mpnpajakku_lay_actionbar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="@dimen/actionbar_height"-->
+<!--        android:background="@color/actionbar_mainbar"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        >-->
+
+<!--        <androidx.appcompat.widget.AppCompatImageView-->
+<!--            android:id="@+id/mpnpajakku_btn_actionbar_left"-->
+<!--            android:layout_width="@dimen/actionbar_height"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="@drawable/bg_highlight_common"-->
+<!--            android:padding="@dimen/gap14"-->
+<!--            app:srcCompat="@drawable/ic_arrowleft_white"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            />-->
+
+<!--        <androidx.appcompat.widget.AppCompatTextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="@color/actionbar_title"-->
+<!--            android:text="MPN Pajakku"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            />-->
+
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <WebView
+        android:id="@+id/mpnpajakku_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <ProgressBar
+        android:id="@+id/mpnpajakku_progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

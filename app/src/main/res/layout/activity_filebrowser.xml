@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.FileBrowserActivity"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/filebrowser_lay_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:background="@drawable/bg_actionbar_main"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <!-- LEFT BUTTON -->
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/filebrowser_btn_actionbar_left"
+            android:layout_width="@dimen/actionbar_height"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_highlight_common"
+            android:padding="@dimen/gap14"
+            android:src="@drawable/ic_actionbar_leftarrow_normal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/filebrowser_lbl_actionbar_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:text="Pilih File"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+<!--        <androidx.appcompat.widget.AppCompatImageView-->
+<!--            android:id="@+id/filebrowser_btn_actionbar_right"-->
+<!--            android:layout_width="@dimen/actionbar_height"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="@drawable/bg_highlight_common"-->
+<!--            android:padding="@dimen/gap14"-->
+<!--            android:src="@drawable/ic_actionbar_next"-->
+<!--            app:layout_constraintRight_toRightOf="parent"-->
+<!--            />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout-->
+<!--        android:id="@+id/filebrowser_swiperefreshlayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/filebrowser_lay_actionbar"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        >-->
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:paddingBottom="@dimen/list_fab_gap"-->
+<!--            android:clipToPadding="false"-->
+<!--            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+<!--            />-->
+<!--    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>-->
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/filebrowser_swiperefreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingBottom="@dimen/list_fab_gap"
+        android:clipToPadding="false"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@+id/filebrowser_lay_actionbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

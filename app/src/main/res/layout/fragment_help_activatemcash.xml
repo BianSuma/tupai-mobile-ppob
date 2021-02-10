@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.pajakku.tupaimobile.fragment.HelpActivateMCashFragment">
+
+    <com.pajakku.tupaimobile.component.AppActionBar
+        android:id="@+id/helpactivatemcash_appactionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="@string/helpactivatemcash_page_title"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/helpactivatemcash_appactionbar"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/layout_content_pad">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/helpcontent_subtitle_indent"
+                android:textStyle="bold"
+                android:text="Berikut cara aktivasi mobile cash"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_content_pad"
+                android:text="1. Klik aktivasi m-cash di [Beranda]"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_content_pad"
+                android:text="2. Pilih Ya untuk melanjutkan"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_content_pad"
+                android:text="3. Masukkan OTP dari SMS"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

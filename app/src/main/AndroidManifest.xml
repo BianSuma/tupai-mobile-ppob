@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.pajakku.tupaimobile">
+
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppThemeNoActionBar"
+        tools:replace="android:allowBackup">
+        <activity android:name=".ppob.dokuwallet.DokuWalletValidationActivity">
+            android:label="Doku Wallet"
+            android:theme="@style/PpobTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ppob.dokuwallet.DokuWalletActivity" />
+            />
+        </activity>
+        <activity
+            android:name=".ppob.bpjs.BpjsValidationActivity"
+            android:label="BPJS"
+            android:theme="@style/PpobTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ppob.bpjs.BpjsActivity" />
+        </activity>
+        <activity
+            android:name=".ppob.multifinance.MultiFinanceValidationActivity"
+            android:label="Multi Finance"
+            android:theme="@style/PpobTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ppob.multifinance.MultiFinanceActivity" />
+        </activity>
+        <activity
+            android:name=".ppob.tvkabel.TvKabelValidationActivity"
+            android:label="TV Kabel"
+            android:theme="@style/PpobTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ppob.tvkabel.TvKabelActivity" />
+        </activity>
+        <activity
+            android:name=".ppob.internet.InternetValidationActivity"
+            android:label="Internet"
+            android:theme="@style/PpobTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ppob.internet.InternetActivity" />
+        </activity>
+        <activity
+            android:name=".ppob.pdam.PdamValidationActivity"
+            android:label="PDAM"
+            android:theme="@style/PpobTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ppob.multifinance.MultiFinanceActivity" />
+        </activity>
+        <activity
+            android:name=".ppob.tokenprepaid.TokenPrePaidValidationActivity"
+            android:label="Token Pre Paid"
+            android:theme="@style/PpobTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ppob.tokenprepaid.TokenPrePaidActivity" />
+        </activity>
+        <activity
+            android:name=".ppob.nontaglist.NonTagListValidationActivity"
+            android:label="Non Tagihan Listrik"
+            android:theme="@style/PpobTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ppob.nontaglist.NonTagListActivity" />
+        </activity>
+        <activity
+            android:name=".ppob.tokenpostpaid.TokenPostPaidValidationActivity"
+            android:label="Token Post Paid"
+            android:theme="@style/PpobTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ppob.tokenpostpaid.TokenPostPaidActivity" />
+        </activity>
+        <activity
+            android:name=".ppob.paketdata.PaketDataValidationActivity"
+            android:label="Paket Data"
+            android:theme="@style/PpobTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ppob.paketdata.PaketDataActivity" />
+        </activity>
+        <activity
+            android:name=".ppob.pulsa.PulsaValidationActivity"
+            android:label="Pulsa"
+            android:theme="@style/PpobTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ppob.pulsa.PulsaActivity" />
+        </activity>
+        <activity android:name=".Coba" />
+        <activity
+            android:name=".ppob.dokuwallet.DokuWalletActivity"
+            android:label="Doku Wallet"
+            android:theme="@style/PpobTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.MainActivity" />
+            />
+        </activity>
+        <activity
+            android:name=".ppob.bpjs.BpjsActivity"
+            android:label="BPJS"
+            android:theme="@style/PpobTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.MainActivity" />
+            />
+        </activity>
+        <activity
+            android:name=".ppob.multifinance.MultiFinanceActivity"
+            android:label="Multi Finance"
+            android:theme="@style/PpobTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.MainActivity" />
+            />
+        </activity>
+        <activity
+            android:name=".ppob.tvkabel.TvKabelActivity"
+            android:label="TV Kabel"
+            android:theme="@style/PpobTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.MainActivity" />
+            />
+        </activity>
+        <activity
+            android:name=".ppob.internet.InternetActivity"
+            android:label="Internet"
+            android:theme="@style/PpobTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.MainActivity" />
+            />
+        </activity>
+        <activity
+            android:name=".ppob.pdam.PdamActivity"
+            android:label="PDAM"
+            android:theme="@style/PpobTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.MainActivity" />
+            />
+        </activity>
+        <activity
+            android:name=".ppob.tokenprepaid.TokenPrePaidActivity"
+            android:label="Token Pre Paid"
+            android:theme="@style/PpobTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.MainActivity" />
+            />
+        </activity>
+        <activity
+            android:name=".ppob.nontaglist.NonTagListActivity"
+            android:label="Non Tagihan Listrik"
+            android:theme="@style/PpobTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.MainActivity" />
+            />
+        </activity>
+        <activity
+            android:name=".ppob.tokenpostpaid.TokenPostPaidActivity"
+            android:label="Token Post Paid"
+            android:theme="@style/PpobTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.MainActivity" />
+            />
+        </activity>
+        <activity
+            android:name=".ppob.paketdata.PaketDataActivity"
+            android:label="Paket Data"
+            android:theme="@style/PpobTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.MainActivity" />
+            />
+        </activity>
+        <activity
+            android:name=".ppob.pulsa.PulsaActivity"
+            android:label="Pulsa"
+            android:theme="@style/PpobTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.MainActivity" />
+            />
+        </activity>
+        <activity android:name=".activity.DevActivity" />
+        <activity android:name=".activity.ErrorLogActivity" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider> <!-- firebase -->
+        <service
+            android:name=".util.AppFirebaseService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/main_actionbar_logo" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimary" />
+
+        <service
+            android:name=".util.AccountService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/authenticator" />
+        </service>
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBar">
+
+            <!-- @test -->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+
+            <!-- TODO: @test -->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+
+        </activity>
+        <activity android:name=".activity.FrontActivity" />
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.SignUpActivity" />
+        <activity android:name=".activity.ResetPasswordActivity" />
+        <activity android:name=".activity.VerifyEmailActivity" />
+        <activity
+            android:name=".activity.SSPDetailUnpaidActivity"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".activity.AddEditWpActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".activity.SSPDetailDoneActivity"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".activity.EditProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".activity.WPListNPTNActivity"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".activity.PayTaxActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ActivationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PaymentActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.KluListActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.PayPulsaActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.PayTokenPLNActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.PayBPJSActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.PaySSPBulkActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.PayPascaBayarActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.PayTagihanPLNActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.ActivateMCActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.TransactionLogActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.SendOTPActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.TopupWebActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.EPayBRIWebActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.MPNPajakkuActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.TaxTypeListActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.SptActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.SptDetailActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.RefundFormActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.RegistrasiNpwpActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.AboutActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.WebEregActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.CommonWebActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.KodeWilayahActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.CameraKitActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.PickKodeNegaraActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.DeepLinkHandlerActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/BgTransparent">
+
+            <!-- <intent-filter android:label="bridge_intent"> -->
+            <!-- <action android:name="android.intent.action.VIEW" /> -->
+            <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+            <!-- <category android:name="android.intent.category.BROWSABLE" /> -->
+            <!-- <data android:scheme="@string/deeplink_scheme" -->
+            <!-- android:host="@string/deeplink_host" -->
+            <!-- /> -->
+            <!-- &lt;!&ndash; note that the leading "/" is required for pathPrefix&ndash;&gt; -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".activity.FileBrowserActivity"
+            android:launchMode="singleTop" />
+    </application>
+
+</manifest>

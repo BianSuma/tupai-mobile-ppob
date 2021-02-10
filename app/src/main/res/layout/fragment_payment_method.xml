@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.pajakku.tupaimobile.fragment.PaymentMethodFragment">
+
+    <com.pajakku.tupaimobile.component.AppActionBar
+        android:id="@+id/paymentmethod_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/paymentmethod_actionbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.pajakku.tupaimobile.component.TupaiSaldoBar
+                android:id="@+id/paymentmethod_tupaisaldobar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.pajakku.tupaimobile.component.TaxWPHeader
+                android:id="@+id/paymentmethod_taxwpheader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tax_amount="true"
+                app:status="true"
+                />
+
+            <!--<com.pajakku.tupaimobile.component.TopupNominal-->
+                <!--android:id="@+id/paymentmethod_topupnominal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content" />-->
+
+            <TextView
+                android:id="@+id/paymentmethod_label_guide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layout_content_pad"
+                android:textColor="@color/label_blue_guide"
+                android:text="@string/paymentmethod_label_guide"
+                />
+
+            <TextView
+                android:id="@+id/paymentmethod_categorylabel_tupaisaldo"
+                style="@style/CategoryLabelBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/paymentmethod_catelabel_saldo"/>
+
+            <com.pajakku.tupaimobile.component.PayMethodButton
+                android:id="@+id/paymentmethod_btn_paywithtupai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:left_img="@drawable/wallet"
+                app:text="@string/paymentmethod_label_saldoname"
+                app:tupai_saldo="true"
+                />
+
+            <com.pajakku.tupaimobile.component.FoldTextBtn
+                android:id="@+id/paymentmethod_btn_otherpay"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                app:text="@string/paymentmethod_btn_otherpay"
+                />
+
+            <LinearLayout
+                android:id="@+id/paymentmethod_layout_otherpay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/paymentmethod_categorylabel_transfer"
+                    style="@style/CategoryLabelBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/paymentmethod_catelabel_transfer"/>
+
+                <com.pajakku.tupaimobile.component.PayMethodButton
+                    android:id="@+id/paymentmethod_btn_transfermandiri"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:left_img="@drawable/ic_bankmandiri"
+                    app:text="@string/paymentmethod_btn_transfermandiri"
+                    />
+
+                <com.pajakku.tupaimobile.component.PayMethodButton
+                    android:id="@+id/paymentmethod_btn_transferbca"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:left_img="@drawable/ic_bca"
+                    app:text="@string/paymentmethod_btn_transferbca"
+                    />
+
+                <com.pajakku.tupaimobile.component.PayMethodButton
+                    android:id="@+id/paymentmethod_btn_transferbni"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:left_img="@drawable/ic_bankbni"
+                    app:text="@string/paymentmethod_btn_transferbni"
+                    />
+
+                <TextView
+                    android:id="@+id/paymentmethod_categorylabel_cc"
+                    style="@style/CategoryLabelBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/paymentmethod_catelabel_cc"/>
+
+                <com.pajakku.tupaimobile.component.PayMethodButton
+                    android:id="@+id/paymentmethod_btn_ccvisafriend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:left_img="@drawable/visafriend"
+                    app:text="@string/paymentmethod_btn_ccvisafriend"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

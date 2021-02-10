@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutEmbossShadow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+    <LinearLayout
+        android:layout_alignParentLeft="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/rowfinishssp_icon"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/global_img_desc"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="5dp">
+
+            <TextView
+                android:id="@+id/rowfinishssp_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/rowfinishssp_npwp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:id="@+id/rowfinishssp_taxdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#adadad"
+                />
+            <TextView
+                android:id="@+id/rowfinishssp_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#52c05a"
+                />
+            <TextView
+                android:id="@+id/rowfinishssp_ntpn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ff7d28"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        style="@style/SSPStatusGreen"
+        android:id="@+id/rowfinishssp_status"
+        android:layout_width="@dimen/ssp_status_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_rightarrow"
+        android:contentDescription="@string/global_img_desc"
+        />
+
+</RelativeLayout>

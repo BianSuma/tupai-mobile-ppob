@@ -1,0 +1,143 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.pajakku.tupaimobile.fragment.PaymentCCFragment">
+
+    <com.pajakku.tupaimobile.component.AppActionBar
+        android:id="@+id/paymentcc_appactionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="@string/paymentcc_page_title"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/paymentcc_appactionbar"
+        android:layout_above="@+id/paymentcc_btn_pay"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <com.pajakku.tupaimobile.component.TaxWPHeader
+                android:id="@+id/paymentcc_taxwpheader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.pajakku.tupaimobile.component.PaymentPrice
+                android:id="@+id/paymentcc_paymentprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/paymentcc_taxwpheader"/>
+
+            <TextView
+                android:id="@+id/paymentcc_label_guide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/paymentcc_paymentprice"
+                android:layout_margin="@dimen/layout_content_pad"
+                android:textColor="@color/label_blue_guide"
+                android:text="@string/paymentcc_label_guide"
+                />
+
+            <LinearLayout
+                android:id="@+id/topuppayacc_layout_ccdata"
+                style="@style/LayoutEmbossShadow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/paymentcc_label_guide"
+                >
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_cardnum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/paymentcc_inp_cardnum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/paymentcc_hint_cardnum"
+                        android:drawableRight="@drawable/ic_cc_visa"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_cardowner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/paymentcc_inp_cardowner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/paymentcc_hint_cardowner"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/paymentcc_inp_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/paymentcc_hint_address"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:baselineAligned="false">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_validdate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        >
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/paymentcc_inp_validdate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/paymentcc_hint_validdate"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_cvv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        >
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/paymentcc_inp_cvv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/paymentcc_hint_cvv"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/paymentcc_btn_pay"
+        style="@style/ButtonGreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/layout_content_pad"
+        android:text="@string/paymentcc_btn_pay"/>
+
+</RelativeLayout>

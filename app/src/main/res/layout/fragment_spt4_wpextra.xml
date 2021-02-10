@@ -1,0 +1,75 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.pajakku.tupaimobile.fragment.Spt4WpExtraFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/spt4wpextra_btn_next">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/layout_content_pad">
+
+                <com.pajakku.tupaimobile.component.AppTextView
+                    android:id="@+id/spt4wpextra_label_guide"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="@string/spt4wpextra_label_guide"
+                    />
+
+                <com.pajakku.tupaimobile.component.AppEditText
+                    android:id="@+id/spt4wpextra_inp_worktype"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spt4wpextra_label_guide"
+                    android:layout_marginTop="@dimen/holo_shadow_pad"
+                    app:hint="@string/spt4wpextra_inp_worktype" />
+
+                <com.pajakku.tupaimobile.component.AppEditText
+                    android:id="@+id/spt4wpextra_inp_klu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spt4wpextra_inp_worktype"
+                    app:hint="@string/spt4wpextra_inp_klu" />
+
+                <com.pajakku.tupaimobile.component.AppEditText
+                    android:id="@+id/spt4wpextra_inp_pasutristatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spt4wpextra_inp_klu"
+                    app:hint="@string/spt4wpextra_inp_statuspasutri" />
+
+                <com.pajakku.tupaimobile.component.AppEditText
+                    android:id="@+id/spt4wpextra_inp_pasutrinpwp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spt4wpextra_inp_pasutristatus"
+                    app:hint="@string/spt4wpextra_inp_npwppasutri" />
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+        <com.pajakku.tupaimobile.component.AppButton
+            android:id="@+id/spt4wpextra_btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/layout_content_pad"
+            android:text="@string/spt4wpextra_btn_next"
+            />
+
+    </RelativeLayout>
+
+</FrameLayout>

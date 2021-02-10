@@ -1,0 +1,63 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.pajakku.tupaimobile.fragment.MainSptFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.pajakku.tupaimobile.component.AppActionBar
+            android:id="@+id/mainspt_appactionbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="@string/mainspt_page_title"
+            />
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/mainspt_swipyrefreshlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/mainspt_appactionbar"
+            >
+            <com.pajakku.tupaimobile.component.AppRecyclerView
+                android:id="@+id/mainspt_list_spt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </RelativeLayout>
+
+    <com.pajakku.tupaimobile.component.AppCircleButton
+        android:id="@+id/mainspt_fab_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="@dimen/holo_shadow_pad"
+        android:layout_marginBottom="@dimen/holo_shadow_pad"
+        app:icon="@drawable/ic_plus"
+        />
+
+    <!-- TODO: @warn disable SPT -->
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_margin="30dp"-->
+        <!--android:background="#88dddddd"-->
+        <!--&gt;-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_margin="@dimen/layout_content_pad"-->
+            <!--android:textAlignment="center"-->
+            <!--android:textColor="#c1ec3333"-->
+            <!--android:text="@string/global_noticelabel_sptnonactive"/>-->
+        <!--</RelativeLayout>-->
+
+</FrameLayout>

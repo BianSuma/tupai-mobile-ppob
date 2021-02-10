@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_input_otp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pajakku.tupaimobile.activity.ActivateMCActivity">
+
+    <com.pajakku.tupaimobile.component.AppActionBar
+        android:id="@+id/inputotp_appactionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="@string/inputotp_page_title"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/inputotp_appactionbar"
+        android:layout_above="@+id/inputotp_btn_send">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/layout_content_pad">
+
+            <TextView
+                android:id="@+id/inputotp_label_guide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/label_blue_guide"
+                android:text="@string/inputotp_label_guidephone"
+                />
+
+            <com.pajakku.tupaimobile.component.AppEditText
+                android:id="@+id/inputotp_inp_phoneotp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_content_pad"
+                android:inputType="number"
+                app:hint="@string/inputotp_hint_phone"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/inputotp_btn_send"
+        style="@style/AppButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/layout_content_pad"
+        android:text="@string/inputotp_btn_send"
+        />
+
+</RelativeLayout>

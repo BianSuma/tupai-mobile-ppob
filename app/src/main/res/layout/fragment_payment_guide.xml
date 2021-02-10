@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pajakku.tupaimobile.fragment.PaymentGuideFragment">
+
+    <com.pajakku.tupaimobile.component.AppActionBar
+        android:id="@+id/paymentguide_appactionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paymentguide_appactionbar"
+        >
+
+        <com.pajakku.tupaimobile.component.TaxWPHeader
+            android:id="@+id/paymentguide_taxwpheader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.pajakku.tupaimobile.component.PaymentPrice
+            android:id="@+id/paymentguide_paymentprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/paymentguide_taxwpheader"/>
+
+        <TextView
+            android:id="@+id/paymentguide_label_payguide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/paymentguide_paymentprice"
+            android:layout_margin="@dimen/layout_content_pad"
+            android:textColor="@color/label_blue_guide"
+            android:text="@string/paymentguide_label_payguide"/>
+
+        <ImageView
+            android:id="@+id/paymentguide_img_guide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/paymentguide_label_payguide"
+            android:contentDescription="@string/global_img_desc"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

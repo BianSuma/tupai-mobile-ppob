@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.pajakku.tupaimobile.fragment.PayTax5SummaryFragment">
+
+    <com.pajakku.tupaimobile.component.AppActionBar
+        android:id="@+id/paytaxsummary_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="@string/paytaxsummary_page_title"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/paytaxsummary_actionbar"
+        android:layout_above="@+id/paytaxsummary_layout_botbtn">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.pajakku.tupaimobile.component.TaxWPHeader
+                android:id="@+id/paytaxsummary_taxwpheader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.pajakku.tupaimobile.component.SSPDetailRowInfo
+                android:id="@+id/paypphsummary_label_row_setor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:var_text="@string/paypphsummary_label_setor"
+                />
+            <com.pajakku.tupaimobile.component.SSPDetailRowInfo
+                android:id="@+id/paypphsummary_label_row_npwp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:var_text="@string/paypphsummary_label_npwp"
+                />
+            <com.pajakku.tupaimobile.component.SSPDetailRowInfo
+                android:id="@+id/paypphsummary_label_row_npwppenyetor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:var_text="@string/paypphsummary_label_npwppenyetor"
+                />
+            <com.pajakku.tupaimobile.component.SSPDetailRowInfo
+                android:id="@+id/paypphsummary_label_row_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:var_text="@string/paypphsummary_label_name"
+                />
+            <com.pajakku.tupaimobile.component.SSPDetailRowInfo
+                android:id="@+id/paypphsummary_label_row_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:var_text="@string/paypphsummary_label_address"
+                />
+            <com.pajakku.tupaimobile.component.SSPDetailRowInfo
+                android:id="@+id/paypphsummary_label_row_kapkjs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:var_text="@string/paypphsummary_label_kapkjs"
+                />
+            <com.pajakku.tupaimobile.component.SSPDetailRowInfo
+                android:id="@+id/paypphsummary_label_row_taxperiod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:var_text="@string/paypphsummary_label_taxperiod"
+                />
+            <com.pajakku.tupaimobile.component.SSPDetailRowInfo
+                android:id="@+id/paypphsummary_label_row_nosk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:var_text="@string/paypphsummary_label_nosk"
+                />
+            <com.pajakku.tupaimobile.component.SSPDetailRowInfo
+                android:id="@+id/paypphsummary_label_row_nop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:var_text="@string/paypphsummary_label_nop"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/paytaxsummary_layout_botbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/layout_content_pad"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/paypphsummary_btn_save"
+            style="@style/AppButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:text="@string/paypphsummary_btn_save"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/paytaxsummary_qhelp_invis"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qhelp_invisview_height"
+        android:layout_below="@+id/paytaxsummary_actionbar"
+        android:layout_margin="100dp"
+        android:background="@android:color/transparent"
+        />
+
+</RelativeLayout>

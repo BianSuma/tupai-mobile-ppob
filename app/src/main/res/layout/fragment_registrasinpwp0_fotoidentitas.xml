@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.registrasinpwp.RegistrasiNpwp0FotoIdentitasFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/gap7"
+            >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp0fotoidentitas_lbl_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/gap7"
+                android:typeface="sans"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:text="Identitas WP"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <!-- INPUT -->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/registrasinpwp0fotoidentitas_inp_negara"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap7"
+                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp0fotoidentitas_lbl_title"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Kode Negara"
+                    android:inputType="textNoSuggestions"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:minLines="2"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp0fotoidentitas_lblwarn_negara"
+                style="@style/LabelWarn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/inpwarn_margintop"
+                app:layout_constraintTop_toTopOf="@+id/registrasinpwp0fotoidentitas_inp_negara"
+                app:layout_constraintRight_toRightOf="@+id/registrasinpwp0fotoidentitas_inp_negara"
+                />
+
+            <!-- FOTO -->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/registrasinpwp0fotoidentitas_inp_foto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap7"
+                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp0fotoidentitas_inp_negara"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="File Foto KTP"
+                    android:inputType="textNoSuggestions"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:minLines="2"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp0fotoidentitas_lblwarn_foto"
+                style="@style/LabelWarn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/inpwarn_margintop"
+                app:layout_constraintTop_toTopOf="@+id/registrasinpwp0fotoidentitas_inp_foto"
+                app:layout_constraintRight_toRightOf="@+id/registrasinpwp0fotoidentitas_inp_foto"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/registrasinpwp0fotoidentitas_img_preview"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="@dimen/gap14"
+                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp0fotoidentitas_inp_foto"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>  <!-- SCROLL END -->
+</ScrollView>

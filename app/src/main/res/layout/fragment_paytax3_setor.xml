@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.pajakku.tupaimobile.fragment.PayTax3SetorFragment">
+
+    <com.pajakku.tupaimobile.component.AppActionBar
+        android:id="@+id/paypphsetor_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="@string/paytax3setor_page_title"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <com.pajakku.tupaimobile.component.TaxWPHeader
+                android:id="@+id/paytaxsetor_taxwpheader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/paytaxsetor_taxwpheader"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/paypphsetor_label_guide"
+                    style="@style/LabelGuide"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/paytaxsetor_label_guide"
+                    />
+
+                <Button
+                    android:id="@+id/paytaxsetor_btn_calculatesetor"
+                    style="@style/AppButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_content_pad"
+                    android:text="@string/paytaxsetor_btn_calculatesetor"/>
+
+                <com.pajakku.tupaimobile.component.AppEditText
+                    android:id="@+id/paypphsetor_inp_setoramount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_content_pad"
+                    app:hint="@string/paytaxsetor_hint_setoramount"/>
+
+                <com.pajakku.tupaimobile.component.AppEditText
+                    android:id="@+id/paypphsetor_inp_terbilang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_content_pad"
+                    android:focusable="false"
+                    android:inputType="textMultiLine"
+                    android:maxLines="3"
+                    app:hint="@string/paytaxsetor_hint_terbilang"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/paypphsetor_btn_next"
+        style="@style/AppButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_margin="@dimen/layout_content_pad"
+        android:text="@string/paytaxsetor_btn_next"
+        />
+
+</LinearLayout>

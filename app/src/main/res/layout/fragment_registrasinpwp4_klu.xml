@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.registrasinpwp.RegistrasiNpwp4KluFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/gap7"
+            >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp4klu_lbl_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/gap7"
+                android:typeface="sans"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:text="Klasifikasi Lapangan Usaha (KLU)"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <!-- EMAIL -->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/registrasinpwp4klu_lbl_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap7"
+                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp4klu_lbl_title"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/registrasinpwp4klu_lbl_email_edittext"
+                    android:enabled="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:inputType="textNoSuggestions"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- JNS PEGAWAI -->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/registrasinpwp4klu_inp_jnspegawai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap7"
+                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp4klu_lbl_email"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Jenis Pegawai"
+                    android:inputType="textNoSuggestions"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:minLines="2"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp4klu_lblwarn_jnspegawai"
+                style="@style/LabelWarn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/inpwarn_margintop"
+                app:layout_constraintTop_toTopOf="@+id/registrasinpwp4klu_inp_jnspegawai"
+                app:layout_constraintRight_toRightOf="@+id/registrasinpwp4klu_inp_jnspegawai"
+                />
+
+            <!-- INPUT -->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/registrasinpwp4klu_inp_klucode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap7"
+                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp4klu_inp_jnspegawai"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Kode KLU"
+                    android:inputType="textNoSuggestions"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:minLines="2"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp4klu_lblwarn_klucode"
+                style="@style/LabelWarn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/inpwarn_margintop"
+                app:layout_constraintTop_toTopOf="@+id/registrasinpwp4klu_inp_klucode"
+                app:layout_constraintRight_toRightOf="@+id/registrasinpwp4klu_inp_klucode"
+                />
+
+            <!-- INPUT -->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/registrasinpwp4klu_inp_uraian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap7"
+                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp4klu_inp_klucode"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Uraian"
+                    android:inputType="textNoSuggestions|textPersonName"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp4klu_lblwarn_uraian"
+                style="@style/LabelWarn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/inpwarn_margintop"
+                app:layout_constraintTop_toTopOf="@+id/registrasinpwp4klu_inp_uraian"
+                app:layout_constraintRight_toRightOf="@+id/registrasinpwp4klu_inp_uraian"
+                />
+
+            <!-- SUB TITLE -->
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp4klu_lbl_klu2_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap7"
+                android:padding="@dimen/gap7"
+                android:typeface="sans"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:text="KLU 2"
+                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp4klu_inp_uraian"
+                />
+
+            <!-- INPUT -->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/registrasinpwp4klu_inp_klu2_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap7"
+                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp4klu_lbl_klu2_title"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Kode KLU"
+                    android:inputType="textNoSuggestions"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:minLines="2"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp4klu_lblwarn_klu2_code"
+                style="@style/LabelWarn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/inpwarn_margintop"
+                app:layout_constraintTop_toTopOf="@+id/registrasinpwp4klu_inp_klu2_code"
+                app:layout_constraintRight_toRightOf="@+id/registrasinpwp4klu_inp_klu2_code"
+                />
+
+            <!-- INPUT -->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/registrasinpwp4klu_inp_merk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap7"
+                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp4klu_inp_klu2_code"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Merk Usaha"
+                    android:inputType="textNoSuggestions"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp4klu_lblwarn_merk"
+                style="@style/LabelWarn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/inpwarn_margintop"
+                app:layout_constraintTop_toTopOf="@+id/registrasinpwp4klu_inp_merk"
+                app:layout_constraintRight_toRightOf="@+id/registrasinpwp4klu_inp_merk"
+                />
+
+            <!-- INPUT -->
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp4klu_lbl_metodebuku"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap7"
+                android:text="Metode Pembukuan"
+                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp4klu_inp_merk"
+                />
+            <RadioGroup
+                android:id="@+id/registrasinpwp4klu_inp_metodebuku"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap7"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp4klu_lbl_metodebuku"
+                >
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:tag="@string/radiovalue_metodebuku_buku"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/gap14"
+                    android:text="Pembukuan"
+                    />
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:tag="@string/radiovalue_metodebuku_catat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pencatatan"
+                    />
+            </RadioGroup>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp4klu_lblwarn_metodebuku"
+                style="@style/LabelWarn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@+id/registrasinpwp4klu_inp_metodebuku"
+                app:layout_constraintRight_toRightOf="@+id/registrasinpwp4klu_inp_metodebuku"
+                />
+
+            <!-- INPUT -->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/registrasinpwp4klu_inp_tahunbuku0"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap7"
+                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp4klu_inp_metodebuku"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/registrasinpwp4klu_inp_tahunbuku1"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Tahun Buku Awal"
+                    android:inputType="textNoSuggestions"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:minLines="2"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp4klu_lblwarn_tahunbuku0"
+                style="@style/LabelWarn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/inpwarn_margintop"
+                app:layout_constraintTop_toTopOf="@+id/registrasinpwp4klu_inp_tahunbuku0"
+                app:layout_constraintRight_toRightOf="@+id/registrasinpwp4klu_inp_tahunbuku0"
+                />
+
+            <!-- INPUT -->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/registrasinpwp4klu_inp_tahunbuku1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap7"
+                app:layout_constraintBottom_toBottomOf="@+id/registrasinpwp4klu_inp_tahunbuku0"
+                app:layout_constraintLeft_toRightOf="@+id/registrasinpwp4klu_inp_tahunbuku0"
+                app:layout_constraintRight_toRightOf="parent"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Tahun Buku Akhir"
+                    android:inputType="textNoSuggestions"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:minLines="2"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp4klu_lblwarn_tahunbuku1"
+                style="@style/LabelWarn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/inpwarn_margintop"
+                app:layout_constraintTop_toTopOf="@+id/registrasinpwp4klu_inp_tahunbuku1"
+                app:layout_constraintRight_toRightOf="@+id/registrasinpwp4klu_inp_tahunbuku1"
+                />
+
+            <!-- INPUT -->
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp4klu_lbl_punyakaryawan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap7"
+                android:text="Memiliki Karyawan"
+                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp4klu_inp_tahunbuku0"
+                />
+            <RadioGroup
+                android:id="@+id/registrasinpwp4klu_inp_punyakaryawan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap7"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp4klu_lbl_punyakaryawan"
+                >
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:tag="@string/radiovalue_punyakaryawan_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/gap14"
+                    android:text="@string/global_yes"
+                    />
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:tag="@string/radiovalue_punyakaryawan_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/global_no"
+                    />
+            </RadioGroup>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp4klu_lblwarn_punyakaryawan"
+                style="@style/LabelWarn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@+id/registrasinpwp4klu_inp_punyakaryawan"
+                app:layout_constraintRight_toRightOf="@+id/registrasinpwp4klu_inp_punyakaryawan"
+                />
+
+            <!-- INPUT -->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/registrasinpwp4klu_inp_klu2uraian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap7"
+                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp4klu_inp_punyakaryawan"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Uraian"
+                    android:inputType="textNoSuggestions"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp4klu_lblwarn_klu2uraian"
+                style="@style/LabelWarn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/inpwarn_margintop"
+                app:layout_constraintTop_toTopOf="@+id/registrasinpwp4klu_inp_klu2uraian"
+                app:layout_constraintRight_toRightOf="@+id/registrasinpwp4klu_inp_klu2uraian"
+                />
+
+            <!-- RELOADER -->
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/registrasinpwp4klu_btn_reload"
+                android:visibility="gone"
+                style="@style/ButtonRed"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:text="Akses Ulang"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>  <!-- SCROLL END -->
+</ScrollView>

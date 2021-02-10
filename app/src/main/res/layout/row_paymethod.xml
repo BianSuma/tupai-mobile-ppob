@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/layout_content_pad"
+    android:background="@drawable/bg_listitem"
+    >
+
+    <ImageView
+        android:id="@+id/rowpaymethod_icon"
+        android:layout_width="100dp"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginLeft="@dimen/holo_shadow_pad"
+        android:contentDescription="@string/global_img_desc"
+        />
+
+    <TextView
+        android:id="@+id/rowpaymethod_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/rowpaymethod_icon"
+        android:layout_marginLeft="20dp"
+        android:layout_centerVertical="true"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>

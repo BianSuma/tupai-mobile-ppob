@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.pajakku.tupaimobile.fragment.SSPDoneFragment">
+
+    <!--<com.pajakku.tupaimobile.component.ListFindPanel-->
+        <!--android:id="@+id/sspdone_listfindpanel"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:visibility="gone"/>-->
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/sspdone_swipyrefreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <com.pajakku.tupaimobile.component.AppRecyclerView
+            android:id="@+id/sspdone_listmultiselect"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <!--<android.support.design.widget.TabLayout-->
+        <!--android:id="@+id/sspfinish_tablayout_bulk"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:visibility="gone"-->
+        <!--app:tabIndicatorHeight="0dp"-->
+        <!--app:tabTextAppearance="@style/SSPDetailUnfinishTabText"-->
+        <!--&gt;-->
+        <!--<android.support.design.widget.TabItem-->
+            <!--android:id="@+id/sspfinish_btn_bulkdel"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:icon="@drawable/ic_trash_can"-->
+            <!--android:text="@string/sspfinish_btn_bulkdel" />-->
+    <!--</android.support.design.widget.TabLayout>-->
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/sspdone_btn_find"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_margin="@dimen/fab_margin"-->
+        <!--android:src="@drawable/ic_btn_find"-->
+        <!--app:backgroundTint="#02bcd4"-->
+        <!--/>-->
+
+    <!--<com.leinardi.android.speeddial.SpeedDialView-->
+        <!--android:id="@+id/sspdone_speeddialview"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_margin="0dp"-->
+        <!--app:sdMainFabClosedSrc="@drawable/ic_plus"-->
+        <!--/>-->
+
+    <com.pajakku.tupaimobile.component.AppCircleButton
+        android:id="@+id/sspdone_circlebtn_find"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/sspdone_circlebtn_sort"
+        android:layout_marginRight="@dimen/holo_shadow_pad"
+        android:layout_marginBottom="@dimen/holo_shadow_pad"
+        app:icon="@drawable/ic_btn_find"
+        />
+
+    <com.pajakku.tupaimobile.component.AppCircleButton
+        android:id="@+id/sspdone_circlebtn_sort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/holo_shadow_pad"
+        android:layout_marginBottom="@dimen/holo_shadow_pad"
+        app:icon="@drawable/ic_list_sort"
+        />
+
+</RelativeLayout>

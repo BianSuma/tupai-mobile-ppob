@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#b6f0ee</color>
+
+    <color name="labelButton">#02b8d4</color>
+
+    <color name="label_blue_guide">#314ea6</color>
+
+    <!--<color name="area_light_blue">#add0ea</color>-->
+    <color name="area_light_blue">#d7e8ec</color>
+
+    <color name="press_highlight">#aab9dc</color>
+
+    <color name="griditem_wp_shadow">#cfcfcf</color>
+
+    <color name="taxicon_pph">#00a6bf</color>
+    <color name="taxicon_ppn">#8444b5</color>
+    <color name="taxicon_pbb">#28b833</color>
+    <color name="taxicon_bunga">#9ddb19</color>
+    <color name="taxicon_misc">#ed8f2a</color>
+
+    <color name="rowssp_mount_billid">#52c05a</color>
+    <color name="rowssp_mount_billid_fail">#990000</color>
+
+    <color name="sptstatus_draft">#ff9955</color>
+    <color name="sptstatus_submit">#a2a2ff</color>
+    <color name="sptstatus_done">#32BEA6</color>
+
+    <color name="dark_transparent">#80180909</color>
+
+    // NEW ONE
+
+    <color name="Default">#FDFDFE</color>
+    <color name="Link">#00FDFDFE</color>
+    <color name="button">#3379B7</color>
+    <color name="textPrimary">#ffffff</color>
+    <color name="Primary">#3379B7</color>
+    <color name="Danger">#D7524F</color>
+    <color name="Warning">#3379B7</color>
+    <color name="colorPrimaryLight">#FFFC98</color>
+    <color name="Info">#5ABEDD</color>
+    <color name="Success">#26B89A</color>
+
+
+
+
+</resources>

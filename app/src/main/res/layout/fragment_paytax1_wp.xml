@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.pajakku.tupaimobile.fragment.PayTax1WPFragment">
+
+    <com.pajakku.tupaimobile.component.AppActionBar
+        android:id="@+id/paytaxwp_appactionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="@string/paytaxwp_page_title"
+        />
+
+    <com.pajakku.tupaimobile.component.TaxWPHeader
+        android:id="@+id/paytaxwp_taxwpheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paytaxwp_appactionbar"/>
+
+    <!--<TextView-->
+        <!--android:id="@+id/paypphwp_label_guide"-->
+        <!--style="@style/LabelGuide"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/paytaxwp_taxwpheader"-->
+        <!--android:text="@string/paypphwp_label_guide"-->
+        <!--/>-->
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/paytaxwp_swipyrefreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/paytaxwp_taxwpheader"
+        >
+        <com.pajakku.tupaimobile.component.AppRecyclerView
+            android:id="@+id/paypphwp_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <View
+        android:id="@+id/paytaxwp_qhelp_invis"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qhelp_invisview_height"
+        android:layout_below="@+id/paytaxwp_taxwpheader"
+        android:layout_margin="@dimen/qhelp_invisview_margin"
+        android:background="@android:color/transparent"
+        />
+
+    <com.pajakku.tupaimobile.component.AppCircleButton
+        android:id="@+id/paytaxwp_circlebtn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/paytaxwp_circlebtn_find"
+        android:layout_marginRight="@dimen/holo_shadow_pad"
+        android:layout_marginBottom="@dimen/holo_shadow_pad"
+        app:icon="@drawable/ic_plus"
+        />
+
+    <com.pajakku.tupaimobile.component.AppCircleButton
+        android:id="@+id/paytaxwp_circlebtn_find"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/paytaxwp_circlebtn_sort"
+        android:layout_marginRight="@dimen/holo_shadow_pad"
+        android:layout_marginBottom="@dimen/holo_shadow_pad"
+        app:icon="@drawable/ic_btn_find"
+        />
+
+    <com.pajakku.tupaimobile.component.AppCircleButton
+        android:id="@+id/paytaxwp_circlebtn_sort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/holo_shadow_pad"
+        android:layout_marginBottom="@dimen/holo_shadow_pad"
+        app:icon="@drawable/ic_list_sort"
+        />
+
+</RelativeLayout>

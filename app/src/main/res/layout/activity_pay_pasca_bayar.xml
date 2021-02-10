@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_pay_pasca_bayar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pajakku.tupaimobile.activity.PayPascaBayarActivity">
+
+    <com.pajakku.tupaimobile.component.AppActionBar
+        android:id="@+id/paypascabayar_appactionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="@string/paypascabayar_page_title"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/paypascabayar_appactionbar"
+        android:layout_above="@+id/paypascabayar_btn_pay">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <com.pajakku.tupaimobile.component.TopupWidget
+                android:id="@+id/paypascabayar_topupwidget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <HorizontalScrollView
+                android:id="@+id/paypascabayar_layout_provider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/paypascabayar_topupwidget"
+                android:layout_marginTop="@dimen/layout_content_pad"
+                android:layout_marginBottom="@dimen/layout_content_pad"
+                android:background="@color/area_light_blue"
+                >
+
+                <RadioGroup
+                    android:id="@+id/paypascabayar_radiogroup_provider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/layout_content_pad"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/area_light_blue">
+
+                    <RadioButton
+                        android:id="@+id/paypascabayar_radio_telkom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_paypascabayar_big_telkom"
+                        android:button="@drawable/ic_paypascabayar_big_transparent"
+                        android:checked="true"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/paypascabayar_radio_indihome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_content_pad"
+                        android:background="@drawable/bg_paypascabayar_big_indihome"
+                        android:button="@drawable/ic_paypascabayar_big_transparent"
+                        android:checked="false"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/paypascabayar_radio_finpay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_content_pad"
+                        android:background="@drawable/bg_paypascabayar_big_finpay"
+                        android:button="@drawable/ic_paypascabayar_big_transparent"
+                        android:checked="false"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/paypascabayar_radio_kartuhalo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/layout_content_pad"
+                        android:background="@drawable/bg_paypascabayar_big_kartuhalo"
+                        android:button="@drawable/ic_paypascabayar_big_transparent"
+                        android:checked="false"
+                        />
+
+                </RadioGroup>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/paypascabayar_label_guide"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/paypascabayar_layout_provider"
+                android:layout_margin="@dimen/layout_content_pad"
+                android:textColor="@color/label_blue_guide"
+                android:text="@string/paypascabayar_label_guide"
+                />
+
+            <com.pajakku.tupaimobile.component.AppEditText
+                android:id="@+id/paypascabayar_inp_customernumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/paypascabayar_label_guide"
+                android:layout_margin="@dimen/layout_content_pad"
+                app:hint="@string/paypascabayar_hint_customernumber"
+                app:right_icon="@drawable/ic_paypascabayar_small_telkom"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/paypascabayar_btn_pay"
+        style="@style/ButtonGreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/layout_content_pad"
+        android:text="@string/paypascabayar_btn_pay"
+        />
+
+</RelativeLayout>

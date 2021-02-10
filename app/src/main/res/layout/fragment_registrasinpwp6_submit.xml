@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.registrasinpwp.RegistrasiNpwp6SubmitFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/gap14"
+            >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp6submit_lbl_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/gap7"
+                android:typeface="sans"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:text="Submit Permohonan"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <!-- NAME -->
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp6submit_lbl_name"
+                style="@style/FieldLbl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama"
+                android:layout_marginTop="@dimen/gap14"
+                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp6submit_lbl_title"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp6submit_val_name"
+                style="@style/FieldVal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp6submit_lbl_name"
+                />
+
+            <!-- NIK -->
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp6submit_lbl_nik"
+                style="@style/FieldLbl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NIK"
+                android:layout_marginTop="@dimen/gap7"
+                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp6submit_val_name"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp6submit_val_nik"
+                style="@style/FieldVal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp6submit_lbl_nik"
+                />
+
+            <!-- EMAIL -->
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp6submit_lbl_email"
+                style="@style/FieldLbl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:layout_marginTop="@dimen/gap7"
+                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp6submit_val_nik"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp6submit_val_email"
+                style="@style/FieldVal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp6submit_lbl_email"
+                />
+
+            <!-- TELP -->
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp6submit_lbl_telp"
+                style="@style/FieldLbl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No. Telepon"
+                android:layout_marginTop="@dimen/gap7"
+                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp6submit_val_email"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp6submit_val_telp"
+                style="@style/FieldVal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp6submit_lbl_telp"
+                />
+
+            <!-- STATUS -->
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp6submit_lbl_status"
+                style="@style/FieldLbl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:layout_marginTop="@dimen/gap7"
+                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp6submit_val_telp"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp6submit_val_status"
+                style="@style/FieldVal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp6submit_lbl_status"
+                />
+
+            <!-- BUTTON SUBMIT -->
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/registrasinpwp6submit_inp_check"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/button_height"
+                android:text="Saya menyatakan telah membaca, mengerti, dan menyetujui syarat dan ketentuan yang berlaku"
+                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp6submit_val_status"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/registrasinpwp6submit_btn_ok"
+                style="@style/AppButton"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginTop="@dimen/gap7"
+                android:text="Kirim Data Permohonan"
+                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp6submit_inp_check"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp6submit_btn_syarat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap14"
+                android:padding="@dimen/gap7"
+                android:background="@drawable/bg_highlight_common"
+                android:typeface="sans"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_blue_dark"
+                android:text="Syarat dan Ketentuan"
+                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp6submit_btn_ok"
+                />
+
+
+            <!-- RELOADER -->
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/registrasinpwp6submit_btn_reload"
+                android:visibility="gone"
+                style="@style/ButtonRed"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:text="Akses Ulang"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>  <!-- SCROLL END -->
+</ScrollView>

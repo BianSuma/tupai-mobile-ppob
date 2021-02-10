@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/main_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/main_outdateversion_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@drawable/bg_outdateversion"
+        android:visibility="gone"
+        >
+        <com.pajakku.tupaimobile.component.AppImageView
+            android:id="@+id/main_outdateversion_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/holo_shadow_pad"
+            android:background="#dc2a2c"
+            android:src="@drawable/outdateversion_icon"
+            />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/main_outdateversion_icon"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/layout_content_pad"
+            android:paddingLeft="@dimen/layout_content_pad"
+            >
+            <com.pajakku.tupaimobile.component.AppTextView
+                android:id="@+id/main_outdateversion_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#dc2a2c"
+                android:textSize="12sp"
+                android:text="@string/main_label_outdateversion_title"
+                />
+            <com.pajakku.tupaimobile.component.AppTextView
+                android:id="@+id/main_outdateversion_body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_outdateversion_title"
+                android:textSize="11sp"
+                android:text="@string/main_label_outdateversion_body"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/main_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/main_outdateversion_layout"
+        android:layout_above="@+id/main_tab_layout"
+        />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/main_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_tablayout_main"
+        app:tabTextColor="#a9a9a9"
+        app:tabSelectedTextColor="#2a55ae"
+        app:tabTextAppearance="@style/MainTabText"
+        />
+
+    <com.pajakku.tupaimobile.component.FilterView
+        android:id="@+id/main_filterview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>
+
+
+
+

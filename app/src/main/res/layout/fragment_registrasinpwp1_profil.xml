@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.registrasinpwp.RegistrasiNpwp1ProfilFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/gap7"
+            >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp1profil_lbl_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/gap7"
+                android:typeface="sans"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:text="Profil"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <!-- INPUT -->
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp1profil_lbl_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap7"
+                android:text="Jenis Kelamin"
+                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp1profil_lbl_title"
+                />
+            <RadioGroup
+                android:id="@+id/registrasinpwp1profil_inp_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap7"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp1profil_lbl_gender"
+                >
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:tag="@string/radiovalue_gender_man"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/gap14"
+                    android:text="Laki-laki"
+                    />
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:tag="@string/radiovalue_gender_woman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Perempuan"
+                    />
+            </RadioGroup>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp1profil_lblwarn_gender"
+                style="@style/LabelWarn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@+id/registrasinpwp1profil_inp_gender"
+                app:layout_constraintRight_toRightOf="@+id/registrasinpwp1profil_inp_gender"
+                />
+
+            <!-- INPUT -->
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp1profil_lbl_nikah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap7"
+                android:text="Status Nikah"
+                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp1profil_inp_gender"
+                />
+            <RadioGroup
+                android:id="@+id/registrasinpwp1profil_inp_nikah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap7"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp1profil_lbl_nikah"
+                >
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:tag="@string/radiovalue_nikah_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/gap14"
+                    android:text="Kawin"
+                    />
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:tag="@string/radiovalue_nikah_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak Kawin"
+                    />
+            </RadioGroup>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp1profil_lblwarn_nikah"
+                style="@style/LabelWarn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@+id/registrasinpwp1profil_inp_nikah"
+                app:layout_constraintRight_toRightOf="@+id/registrasinpwp1profil_inp_nikah"
+                />
+
+            <!-- NAME -->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/registrasinpwp1profil_inp_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap7"
+                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp1profil_inp_nikah"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nama Wajib Pajak"
+                    android:inputType="textNoSuggestions|textPersonName"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp1profil_lblwarn_name"
+                style="@style/LabelWarn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/inpwarn_margintop"
+                app:layout_constraintTop_toTopOf="@+id/registrasinpwp1profil_inp_name"
+                app:layout_constraintRight_toRightOf="@+id/registrasinpwp1profil_inp_name"
+                />
+
+            <!-- INPUT -->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/registrasinpwp1profil_inp_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap7"
+                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp1profil_inp_name"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email Wajib Pajak"
+                    android:inputType="textNoSuggestions|textPersonName"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp1profil_lblwarn_email"
+                style="@style/LabelWarn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/inpwarn_margintop"
+                app:layout_constraintTop_toTopOf="@+id/registrasinpwp1profil_inp_email"
+                app:layout_constraintRight_toRightOf="@+id/registrasinpwp1profil_inp_email"
+                />
+
+            <!-- INPUT -->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/registrasinpwp1profil_inp_nik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap7"
+                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp1profil_inp_email"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="NIK"
+                    android:inputType="textNoSuggestions|number"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp1profil_lblwarn_nik"
+                style="@style/LabelWarn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/inpwarn_margintop"
+                app:layout_constraintTop_toTopOf="@+id/registrasinpwp1profil_inp_nik"
+                app:layout_constraintRight_toRightOf="@+id/registrasinpwp1profil_inp_nik"
+                />
+
+            <!-- INPUT -->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/registrasinpwp1profil_inp_kk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap7"
+                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp1profil_inp_nik"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="No. KK"
+                    android:inputType="textNoSuggestions|number"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp1profil_lblwarn_kk"
+                style="@style/LabelWarn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/inpwarn_margintop"
+                app:layout_constraintTop_toTopOf="@+id/registrasinpwp1profil_inp_kk"
+                app:layout_constraintRight_toRightOf="@+id/registrasinpwp1profil_inp_kk"
+                />
+
+            <!-- KITAS -->
+
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:id="@+id/registrasinpwp1profil_inp_kitas"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/gap7"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp1profil_inp_kk"-->
+<!--                >-->
+<!--                <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:hint="Nomor Kitas"-->
+<!--                    android:inputType="textNoSuggestions|textPersonName"-->
+<!--                    />-->
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:id="@+id/registrasinpwp1profil_lblwarn_kitas"-->
+<!--                style="@style/LabelWarn"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/inpwarn_margintop"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/registrasinpwp1profil_inp_kitas"-->
+<!--                app:layout_constraintRight_toRightOf="@+id/registrasinpwp1profil_inp_kitas"-->
+<!--                />-->
+
+            <!-- INPUT -->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/registrasinpwp1profil_inp_lahir_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap7"
+                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp1profil_inp_kk"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Tempat lahir WP"
+                    android:inputType="textNoSuggestions|textPersonName"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp1profil_lblwarn_lahir_place"
+                style="@style/LabelWarn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/inpwarn_margintop"
+                app:layout_constraintTop_toTopOf="@+id/registrasinpwp1profil_inp_lahir_place"
+                app:layout_constraintRight_toRightOf="@+id/registrasinpwp1profil_inp_lahir_place"
+                />
+
+            <!-- TGL LAHIR -->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/registrasinpwp1profil_inp_birthdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap7"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp1profil_inp_lahir_place"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Tanggal Lahir WP"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:inputType="textNoSuggestions"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp1profil_lblwarn_birthdate"
+                style="@style/LabelWarn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/inpwarn_margintop"
+                app:layout_constraintTop_toTopOf="@+id/registrasinpwp1profil_inp_birthdate"
+                app:layout_constraintRight_toRightOf="@+id/registrasinpwp1profil_inp_birthdate"
+                />
+
+            <!-- INPUT -->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/registrasinpwp1profil_inp_telp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap7"
+                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp1profil_inp_birthdate"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nomor Telepon"
+                    android:inputType="textNoSuggestions|number"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp1profil_lblwarn_telp"
+                style="@style/LabelWarn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/inpwarn_margintop"
+                app:layout_constraintTop_toTopOf="@+id/registrasinpwp1profil_inp_telp"
+                app:layout_constraintRight_toRightOf="@+id/registrasinpwp1profil_inp_telp"
+                />
+
+            <!-- INPUT -->
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp1profil_lbl_tanggungan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap7"
+                android:text="Jumlah Tanggungan"
+                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp1profil_inp_telp"
+                />
+            <RadioGroup
+                android:id="@+id/registrasinpwp1profil_inp_tanggungan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap7"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp1profil_lbl_tanggungan"
+                >
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:tag="@string/radiovalue_tanggungan_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/gap14"
+                    android:text="0"
+                    />
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:tag="@string/radiovalue_tanggungan_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/gap14"
+                    android:text="1"
+                    />
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:tag="@string/radiovalue_tanggungan_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/gap14"
+                    android:text="2"
+                    />
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:tag="@string/radiovalue_tanggungan_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/gap14"
+                    android:text="3"
+                    />
+            </RadioGroup>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp1profil_lblwarn_tanggungan"
+                style="@style/LabelWarn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@+id/registrasinpwp1profil_inp_tanggungan"
+                app:layout_constraintRight_toRightOf="@+id/registrasinpwp1profil_inp_tanggungan"
+                />
+
+            <!-- INPUT -->
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp1profil_lbl_jmlpenghasilan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap7"
+                android:text="Jumlah Penghasilan"
+                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp1profil_inp_tanggungan"
+                />
+            <RadioGroup
+                android:id="@+id/registrasinpwp1profil_inp_jmlpenghasilan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap7"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp1profil_lbl_jmlpenghasilan"
+                >
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:tag="@string/radiovalue_jmlpenghasilan_kurang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kurang dari Rp 4.500.000"
+                    />
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:tag="@string/radiovalue_jmlpenghasilan_4jt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp 4.500.000 s/d Rp 9.999.999"
+                    />
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:tag="@string/radiovalue_jmlpenghasilan_10jt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp 10.000.0000 s/d Rp 14.999.9999"
+                    />
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:tag="@string/radiovalue_jmlpenghasilan_15jt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp 15.000.0000 s/d Rp 19.999.999"
+                    />
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:tag="@string/radiovalue_jmlpenghasilan_20jt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp 20.000.000 atau lebih"
+                    />
+            </RadioGroup>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp1profil_lblwarn_jmlpenghasilan"
+                style="@style/LabelWarn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@+id/registrasinpwp1profil_inp_jmlpenghasilan"
+                app:layout_constraintRight_toRightOf="@+id/registrasinpwp1profil_inp_jmlpenghasilan"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>  <!-- SCROLL END -->
+</ScrollView>

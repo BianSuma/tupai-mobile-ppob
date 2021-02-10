@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pajakku.tupaimobile.activity.SplashActivity">
+
+        <ImageView
+            android:id="@+id/splash_img"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_alignBottom="@+id/splash_label_subtitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"
+            android:src="@drawable/logo_and_label"
+            android:contentDescription="@string/global_img_desc"
+            />
+
+        <TextView
+            android:id="@+id/splash_label_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingTop="150dp"
+            android:textStyle="italic|bold"
+            android:textColor="@color/label_blue_guide"
+            android:text="@string/splash_easy_pay"
+            />
+
+</RelativeLayout>

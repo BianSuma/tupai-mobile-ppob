@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.registrasinpwp.RegistrasiNpwp3WajahFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/gap7"
+            >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp3wajah_lbl_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/gap7"
+                android:typeface="sans"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:text="Verifikasi Wajah"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <!-- FOTO -->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/registrasinpwp3wajah_inp_foto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/gap7"
+                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp3wajah_lbl_title"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="File Video"
+                    android:inputType="textNoSuggestions"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:minLines="2"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp3wajah_lblwarn_foto"
+                style="@style/LabelWarn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/inpwarn_margintop"
+                app:layout_constraintTop_toTopOf="@+id/registrasinpwp3wajah_inp_foto"
+                app:layout_constraintRight_toRightOf="@+id/registrasinpwp3wajah_inp_foto"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/registrasinpwp3wajah_btn_camera"
+                style="@style/AppButton"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginTop="@dimen/gap7"
+                android:text="Kamera"
+                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp3wajah_inp_foto"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/registrasinpwp3wajah_img_preview"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="@dimen/gap14"
+                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp3wajah_btn_camera"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>  <!-- SCROLL END -->
+</ScrollView>

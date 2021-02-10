@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.registrasinpwp.RegistrasiNpwp2AddressFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/gap7"
+            >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp2address_lbl_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/gap7"
+                android:typeface="sans"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:text="Alamat"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <!-- INPUT -->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/registrasinpwp2address_inp_jalan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap7"
+                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp2address_lbl_title"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Jalan"
+                    android:inputType="textNoSuggestions|textPersonName"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp2address_lblwarn_jalan"
+                style="@style/LabelWarn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/inpwarn_margintop"
+                app:layout_constraintTop_toTopOf="@+id/registrasinpwp2address_inp_jalan"
+                app:layout_constraintRight_toRightOf="@+id/registrasinpwp2address_inp_jalan"
+                />
+
+            <!-- INPUT -->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/registrasinpwp2address_inp_rt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap7"
+                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp2address_inp_jalan"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/registrasinpwp2address_inp_rw"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="RT"
+                    android:inputType="textNoSuggestions|number"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp2address_lblwarn_rt"
+                style="@style/LabelWarn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/inpwarn_margintop"
+                app:layout_constraintTop_toTopOf="@+id/registrasinpwp2address_inp_rt"
+                app:layout_constraintRight_toRightOf="@+id/registrasinpwp2address_inp_rt"
+                />
+
+            <!-- INPUT -->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/registrasinpwp2address_inp_rw"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap7"
+                app:layout_constraintBottom_toBottomOf="@+id/registrasinpwp2address_inp_rt"
+                app:layout_constraintLeft_toRightOf="@+id/registrasinpwp2address_inp_rt"
+                app:layout_constraintRight_toRightOf="parent"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="RW"
+                    android:inputType="textNoSuggestions|number"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp2address_lblwarn_rw"
+                style="@style/LabelWarn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/inpwarn_margintop"
+                app:layout_constraintTop_toTopOf="@+id/registrasinpwp2address_inp_rw"
+                app:layout_constraintRight_toRightOf="@+id/registrasinpwp2address_inp_rw"
+                />
+
+            <!-- INPUT -->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/registrasinpwp2address_inp_wilayah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/gap7"
+                app:layout_constraintTop_toBottomOf="@+id/registrasinpwp2address_inp_rt"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Kode Wilayah"
+                    android:inputType="textNoSuggestions"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:minLines="2"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/registrasinpwp2address_lblwarn_wilayah"
+                style="@style/LabelWarn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/inpwarn_margintop"
+                app:layout_constraintTop_toTopOf="@+id/registrasinpwp2address_inp_wilayah"
+                app:layout_constraintRight_toRightOf="@+id/registrasinpwp2address_inp_wilayah"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>  <!-- SCROLL END -->
+</ScrollView>

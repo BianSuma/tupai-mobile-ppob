@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "232361836574",
+    "firebase_url": "https://tupai-mobile.firebaseio.com",
+    "project_id": "tupai-mobile",
+    "storage_bucket": "tupai-mobile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:232361836574:android:00e8d57b4eceb4a1",
+        "android_client_info": {
+          "package_name": "com.pajakku.tupaimobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "232361836574-g4aippb50lhtriu6n4rluet7g6o4vjen.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5TytQrLvrDC5FxXVkYNHKw_GaiLDBerc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rowbrutotax_layout_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/layout_content_pad"
+        android:background="#ddddff"
+        >
+
+        <com.pajakku.tupaimobile.component.AppEditText
+            android:id="@+id/rowbrutotax_inp_workaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/rowbrutotax_btn_fold"
+            android:layout_marginTop="@dimen/holo_shadow_pad"
+            app:hint="@string/rowbrutotax_hint_workaddress" />
+
+        <com.pajakku.tupaimobile.component.AppImageView
+            android:id="@+id/rowbrutotax_btn_fold"
+            android:layout_width="@dimen/button_height"
+            android:layout_height="@dimen/button_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/ic_btn_bulk"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rowbrutotax_layout_child"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rowbrutotax_layout_head"
+        >
+    <com.pajakku.tupaimobile.component.BrutoTaxItemList
+        android:id="@+id/rowbrutotax_child_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eeeeff"
+        />
+
+    <LinearLayout
+        android:id="@+id/rowbrutotax_layout_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rowbrutotax_child_head"
+        android:orientation="vertical"
+        />
+
+    <com.pajakku.tupaimobile.component.BrutoTaxItemList
+        android:id="@+id/rowbrutotax_child_sum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rowbrutotax_layout_list"
+        android:background="#eeeeff"
+        />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="7dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/dialogprogress_layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        >
+
+    <ProgressBar
+        android:id="@+id/dialogprogress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:indeterminate="true"
+        />
+
+    <TextView
+        android:id="@+id/dialogprogress_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_toRightOf="@+id/dialogprogress_bar"
+        android:layout_centerVertical="true"
+        android:textSize="16sp"
+        />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/dialogprogress_btn_cancel"
+        style="@style/AppButton"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_height"
+        android:layout_below="@+id/dialogprogress_layout_top"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="@dimen/holo_shadow_pad"
+        android:paddingRight="@dimen/holo_shadow_pad"
+        android:text="@string/global_dialogprogress_btn_cancel"
+        />
+
+</RelativeLayout>

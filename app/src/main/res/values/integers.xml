@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="npwp">20</integer>
+    <integer name="nik_pretty_length">16</integer>
+    <integer name="nik_length">16</integer>
+    <integer name="efin_length">10</integer>
+    <integer name="ntpn_length">16</integer>
+
+</resources>

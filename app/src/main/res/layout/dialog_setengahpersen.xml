@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.pajakku.tupaimobile.component.AppEditText
+        android:id="@+id/paytax3setorsetengah_inp_bruto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/holo_shadow_pad"
+        app:hint="@string/paytax3setorsetengah_hint_bruto"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_pay_sspbulk"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pajakku.tupaimobile.activity.PaySSPBulkActivity">
+
+    <com.pajakku.tupaimobile.component.AppActionBar
+        android:id="@+id/paysspbulk_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="@string/paysspbulk_page_title"
+        />
+
+    <ListView
+        android:id="@+id/paysspbulk_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/paysspbulk_actionbar"
+        android:layout_above="@+id/paysspbulk_layout_total"
+        />
+
+    <RelativeLayout
+        android:id="@+id/paysspbulk_layout_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/layout_content_pad"
+        android:layout_above="@+id/paysspbulk_btn_pay"
+        android:background="#fff0d3">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/paysspbulk_label_total"/>
+        <TextView
+            android:id="@+id/paysspbulk_val_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/paysspbulk_btn_pay"
+        style="@style/ButtonGreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/layout_content_pad"
+        android:text="@string/paysspbulk_btn_pay"
+        />
+
+</RelativeLayout>

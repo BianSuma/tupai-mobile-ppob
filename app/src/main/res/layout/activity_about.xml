@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_about"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pajakku.tupaimobile.activity.AboutActivity">
+
+    <com.pajakku.tupaimobile.component.AppActionBar
+        android:id="@+id/about_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="@string/about_page_title"
+        />
+
+    <ScrollView
+        android:id="@+id/about_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/about_actionbar"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/holo_shadow_pad"
+            android:paddingLeft="@dimen/holo_shadow_pad"
+            >
+
+            <ImageView
+                android:id="@+id/about_img_title"
+                android:layout_width="wrap_content"
+                android:layout_height="140dp"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/holo_shadow_pad"
+                android:src="@drawable/logo_about"
+                android:contentDescription="@string/global_img_desc"
+                />
+
+            <View
+                android:id="@+id/about_separator0"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/about_img_title"
+                android:background="#dddddd"
+                />
+
+            <com.pajakku.tupaimobile.component.AppTextView
+                android:id="@+id/about_label_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/about_separator0"
+                android:textStyle="bold"
+                />
+            <com.pajakku.tupaimobile.component.AppTextView
+                android:id="@+id/about_label_versioncode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/about_label_version"
+                android:textSize="10sp"
+                />
+            <com.pajakku.tupaimobile.component.AppTextView
+                android:id="@+id/about_label_builddate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/about_label_versioncode"
+                android:textSize="10sp"
+                />
+            <TextView
+                android:id="@+id/about_lbl_long_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/about_label_builddate"
+                android:layout_marginTop="@dimen/layout_content_pad"
+                android:text="Tupai merupakan platform pembayaran pajak yang dikembangkan oleh pajakku. Telah mendapat izin dari Direktorat Jenderal Pajak melalui SK KEP 217/PJ/2015 serta SK KEP 126/PJ/2016"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/about_btn_del_cache"
+                style="@style/AppButton"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:layout_below="@+id/about_lbl_long_desc"
+                android:layout_marginTop="@dimen/button_height"
+                android:layout_marginLeft="@dimen/gap14"
+                android:layout_marginRight="@dimen/gap14"
+                android:typeface="sans"
+                android:text="Hapus Semua Data Cache"
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/about_img_pajakku"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/holo_shadow_pad"
+        android:src="@drawable/about_bottom_info"
+        android:contentDescription="@string/global_img_desc"
+        />
+
+    <!-- @test -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/about_btn_dev"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DEV"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

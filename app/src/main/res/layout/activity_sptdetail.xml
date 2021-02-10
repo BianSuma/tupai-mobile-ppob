@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_sspdetail_finish"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pajakku.tupaimobile.activity.SptDetailActivity">
+
+    <com.pajakku.tupaimobile.component.AppActionBar
+        android:id="@+id/sptdetail_appactionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        app:title="@string/sptdetail_page_title"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sptdetail_appactionbar"
+        android:layout_above="@+id/sptdetail_btn_bot">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/sptdetail_layout_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                >
+
+                <ImageView
+                    android:id="@+id/sptdetail_spticon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:contentDescription="@string/global_img_desc"
+                    android:padding="@dimen/layout_content_pad"
+                    />
+
+                <com.pajakku.tupaimobile.component.AppTextView
+                    android:id="@+id/sptdetail_label_icondesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_toRightOf="@+id/sptdetail_spticon"
+                    android:paddingLeft="@dimen/layout_content_pad"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sptdetail_layout_status"
+                >
+
+                <com.pajakku.tupaimobile.component.SSPDetailRowInfo
+                    android:id="@+id/sptdetail_rowinfo_spttype"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:var_text="@string/sptdetail_rowinfo_spttype"
+                    />
+
+                <com.pajakku.tupaimobile.component.SSPDetailRowInfo
+                    android:id="@+id/sptdetail_rowinfo_statusspt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sptdetail_rowinfo_spttype"
+                    app:var_text="@string/sptdetail_rowinfo_statusspt"
+                    />
+
+                <com.pajakku.tupaimobile.component.SSPDetailRowInfo
+                    android:id="@+id/sptdetail_rowinfo_year"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sptdetail_rowinfo_statusspt"
+                    app:var_text="@string/sptdetail_rowinfo_year"
+                    />
+
+                <com.pajakku.tupaimobile.component.SSPDetailRowInfo
+                    android:id="@+id/sptdetail_rowinfo_npwp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sptdetail_rowinfo_year"
+                    app:var_text="@string/sptdetail_rowinfo_npwp"
+                    />
+
+                <com.pajakku.tupaimobile.component.SSPDetailRowInfo
+                    android:id="@+id/sptdetail_rowinfo_wpname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:var_text="@string/sptdetail_rowinfo_wpname"
+                    android:layout_below="@+id/sptdetail_rowinfo_npwp"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <com.pajakku.tupaimobile.component.AppCircleButton
+        android:id="@+id/sptdetail_circlebtn_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/sptdetail_btn_bot"
+        android:layout_marginRight="@dimen/holo_shadow_pad"
+        android:layout_marginBottom="@dimen/holo_shadow_pad"
+        app:icon="@drawable/spt_statuswhite_draft"
+        />
+
+    <com.pajakku.tupaimobile.component.AppButton
+        android:id="@+id/sptdetail_btn_bot"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/layout_content_pad"
+        android:text="@string/sptdetail_btn_bot"
+        />
+
+</RelativeLayout>

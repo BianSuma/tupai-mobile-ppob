@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.pajakku.tupaimobile.activity.PaymentActivity">
+
+    <com.pajakku.tupaimobile.component.AppActionBar
+        android:id="@+id/pay_appactionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="@string/pay_page_title"
+        />
+
+    <com.pajakku.tupaimobile.component.TaxWPHeader
+        android:id="@+id/pay_taxwpheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pay_appactionbar"
+        />
+
+    <TextView
+        android:id="@+id/pay_label_guide"
+        style="@style/LabelGuide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pay_taxwpheader"
+        android:text="@string/pay_label_guide"
+        />
+
+    <ListView
+        android:id="@+id/pay_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pay_label_guide"
+        />
+
+    <View
+        android:id="@+id/payment_qhelp_invis"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qhelp_invisview_height"
+        android:layout_below="@+id/pay_label_guide"
+        android:layout_margin="@dimen/qhelp_invisview_margin"
+        android:background="@android:color/transparent"
+        />
+
+</RelativeLayout>

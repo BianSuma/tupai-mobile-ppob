@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="7dp"
+    >
+
+    <TextView
+        android:id="@+id/dialoginfo_label_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textColor="#575b95"
+        android:textSize="16sp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/dialoginfo_layout_topup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialoginfo_label_top"
+        >
+
+        <ImageView
+            android:id="@+id/dialoginfo_img_topup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@android:mipmap/sym_def_app_icon"
+            android:contentDescription="@string/global_img_desc"/>
+
+        <TextView
+            android:id="@+id/dialoginfo_var_topupamount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/dialoginfo_img_topup"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/dialoginfo_img_topup"
+            android:layout_below="@+id/dialoginfo_var_topupamount"
+            android:text="@string/global_dialoginfo_label_topupdesc"
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/dialoginfo_btn_close"
+        style="@style/AppButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialoginfo_layout_topup"
+        android:layout_alignParentRight="true"
+        android:text="@string/global_dialoginfo_btn_close"
+        />
+
+</RelativeLayout>

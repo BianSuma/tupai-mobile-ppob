@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Fix android studio render
+  - - - -
+  Rendering Problems
+  Couldn't resolve resource @id/visible
+-->
+<resources>
+    <item name="devmark_top_left" type="id" />
+
+    <item name="visible" type="id"/>
+    <item name="masked" type="id"/>
+</resources>

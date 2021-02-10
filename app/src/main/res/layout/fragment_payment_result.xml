@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pajakku.tupaimobile.fragment.PaymentResultFragment">
+
+    <com.pajakku.tupaimobile.component.AppActionBar
+        android:id="@+id/paymentresult_appactionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        />
+
+    <com.pajakku.tupaimobile.component.TaxWPHeader
+        android:id="@+id/paymentresult_taxwpheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paymentresult_appactionbar"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/paymentresult_taxwpheader"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/paymentresult_label_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="60dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/label_blue_guide"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/paymentresult_btn_detail"
+            style="@style/AppButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_content_pad"
+            android:text="@string/paymentresult_btn_detail"/>
+
+        <Button
+            android:id="@+id/paymentresult_btn_close"
+            style="@style/AppButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_content_pad"
+            android:text="@string/paymentresult_btn_close"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/LayoutEmbossShadow"
+    >
+    
+    <LinearLayout
+        android:layout_alignParentLeft="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/rowunfinishssp_icon"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/global_img_desc"
+            />
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="5dp">
+
+            <TextView
+                android:id="@+id/rowunfinishssp_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/rowunfinishssp_npwp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:id="@+id/rowunfinishssp_taxdetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#adadad"
+                />
+            <TextView
+                android:id="@+id/rowunfinishssp_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#52c05a"
+                />
+            <TextView
+                android:id="@+id/rowunfinishssp_bilcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ff7d28"
+                />
+            <TextView
+                android:id="@+id/rowunfinishssp_bilcodepajakku"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ff7d28"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/SSPStatusPink"
+        android:id="@+id/rowunfinishssp_status"
+        android:layout_width="@dimen/ssp_status_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        />
+
+</RelativeLayout>

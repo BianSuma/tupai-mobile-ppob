@@ -1,0 +1,81 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.pajakku.tupaimobile.fragment.Spt4WpExtraFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/layout_content_pad"
+        android:paddingRight="@dimen/layout_content_pad"
+        >
+
+        <TextView
+            android:id="@+id/spt1year_label_guide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_content_pad"
+            android:textAlignment="center"
+            android:text="@string/spt2year_label_guide"
+            />
+
+        <com.pajakku.tupaimobile.component.AppEditText
+            android:id="@+id/spt1year_inp_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spt1year_label_guide"
+            android:inputType="number"
+            app:hint="@string/spt1year_hint_year"/>
+
+        <TextView
+            android:id="@+id/spt2year_label_pembetulan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spt1year_inp_year"
+            android:layout_marginTop="@dimen/holo_shadow_pad"
+            android:text="@string/spt2year_label_pembetulan"
+            />
+        
+        <RadioGroup
+            android:id="@+id/spt1year_inp_pembetulan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/spt2year_label_pembetulan"
+            android:layout_alignTop="@+id/spt2year_label_pembetulan">
+            <RadioButton
+                android:id="@+id/spt1year_inp_pembetulannormal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/spt1year_inp_pembetulannormal"
+                android:checked="true"/>
+            <RadioButton
+                android:id="@+id/spt1year_inp_pembetulanke"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/spt1year_inp_pembetulanke"/>
+        </RadioGroup>
+
+        <com.pajakku.tupaimobile.component.AppEditText
+            android:id="@+id/spt2year_inp_pembetulanke"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spt1year_inp_pembetulan"
+            android:layout_alignLeft="@+id/spt1year_inp_pembetulan"
+            android:inputType="number"
+            app:hint="@string/spt1year_hint_pembetulanke"/>
+
+        <Button
+            android:id="@+id/spt2year_btn_createdraft"
+            style="@style/AppButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/layout_content_pad"
+            android:text="@string/spt2year_btn_createdraft"
+            />
+
+    </RelativeLayout>
+
+</FrameLayout>

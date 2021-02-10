@@ -1,0 +1,9 @@
+<resources>
+
+    <dimen name="fab_margin">0dp</dimen>
+
+    <dimen name="inpwarn_margintop">48dp</dimen>
+    <dimen name="actionbar_height">55dp</dimen>
+    <dimen name="list_fab_gap">80dp</dimen>
+
+</resources>

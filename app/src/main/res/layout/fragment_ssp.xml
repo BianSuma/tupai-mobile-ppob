@@ -1,0 +1,42 @@
+<RelativeLayout android:id="@+id/main_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pajakku.tupaimobile.fragment.SSPFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.pajakku.tupaimobile.component.AppActionBar
+        android:id="@+id/fragssp_appactionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="@string/fragssp_label_title"
+        />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/fragssp_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragssp_appactionbar"
+        android:background="@color/area_light_blue"
+        />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/fragssp_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fragssp_tablayout"
+        android:layout_alignParentBottom="true"
+        />
+
+    <View
+        android:id="@+id/fragssp_qhelp_invis"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qhelp_invisview_height"
+        android:layout_below="@+id/fragssp_tablayout"
+        android:layout_margin="@dimen/qhelp_invisview_margin"
+        android:background="@android:color/transparent"
+        />
+
+</RelativeLayout>
+

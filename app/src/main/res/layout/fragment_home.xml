@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.pajakku.tupaimobile.component.AppActionBar
+        android:id="@+id/fraghome_appactionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="@string/fraghome_page_title"
+        app:icon="@drawable/main_actionbar_logo"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/fraghome_btn_daftarnpwp"
+        style="@style/AppButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_margin="@dimen/gap3"
+        android:paddingLeft="@dimen/gap14"
+        android:paddingRight="@dimen/gap14"
+        android:text="Permohonan Daftar NPWP"
+        android:layout_below="@+id/fraghome_appactionbar"
+        />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/fraghome_swipyrefreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/gap3"
+        android:layout_below="@+id/fraghome_btn_daftarnpwp"
+        >
+        <ScrollView
+            android:id="@+id/fraghome_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:context="com.pajakku.tupaimobile.fragment.HomeFragment">
+
+                <com.pajakku.tupaimobile.component.TopupWidget
+                    android:id="@+id/fraghome_topupwidget"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <com.pajakku.tupaimobile.component.GridCollection
+                    android:id="@+id/fraghome_gridcollection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>  <!-- SCROLL END -->
+        </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <com.pajakku.tupaimobile.component.AppCircleButton
+        android:id="@+id/fraghome_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/holo_shadow_pad"
+        android:layout_marginBottom="@dimen/holo_shadow_pad"
+        app:icon="@drawable/ic_hometaxmode_list"
+        />
+
+</RelativeLayout>

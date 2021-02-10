@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.pajakku.tupaimobile.fragment.SSPUnpaidFragment">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/sspunpaid_swipyrefreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <com.pajakku.tupaimobile.component.AppRecyclerView
+            android:id="@+id/sspunfinish_listmultiselect"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <com.pajakku.tupaimobile.component.AppCircleButton
+        android:id="@+id/sspunpaid_circlebtn_find"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/sspunpaid_circlebtn_sort"
+        android:layout_marginRight="@dimen/holo_shadow_pad"
+        android:layout_marginBottom="@dimen/holo_shadow_pad"
+        app:icon="@drawable/ic_btn_find"
+        />
+
+    <com.pajakku.tupaimobile.component.AppCircleButton
+        android:id="@+id/sspunpaid_circlebtn_sort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/holo_shadow_pad"
+        android:layout_marginBottom="@dimen/holo_shadow_pad"
+        app:icon="@drawable/ic_list_sort"
+        />
+
+</RelativeLayout>

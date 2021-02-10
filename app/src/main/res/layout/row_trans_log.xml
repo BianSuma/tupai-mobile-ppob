@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/layout_content_pad"
+    >
+    <TextView
+        android:id="@+id/rowtranslog_label_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        />
+    <TextView
+        android:id="@+id/rowtranslog_label_transtype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/rowtranslog_label_id"
+        android:layout_marginLeft="@dimen/holo_shadow_pad"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:id="@+id/rowtranslog_label_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rowtranslog_label_transtype"
+        android:textColor="@color/rowssp_mount_billid"
+        />
+
+    <TextView
+        android:id="@+id/rowtranslog_label_billnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/rowtranslog_label_amount"
+        android:layout_alignTop="@+id/rowtranslog_label_amount"
+        android:layout_marginLeft="@dimen/holo_shadow_pad"
+        android:textColor="@color/rowssp_mount_billid"
+        />
+
+    <TextView
+        android:id="@+id/rowtranslog_label_updatedat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rowtranslog_label_amount"
+        android:textSize="10sp"
+        />
+
+    <TextView
+        android:id="@+id/rowtranslog_label_status"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/layout_content_pad"
+        android:textSize="11sp"
+        android:gravity="center"
+        />
+
+
+</RelativeLayout>

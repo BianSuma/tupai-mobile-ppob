@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <corners android:radius="4dp" />
+            <solid android:color="@color/press_highlight" />
+        </shape>
+    </item>
+    <!--<item android:right="1dp" android:bottom="1dp" android:left="1dp">-->
+        <!--<shape>-->
+            <!--<solid android:color="#bfbfbf" />-->
+        <!--</shape>-->
+    <!--</item>-->
+</layer-list>

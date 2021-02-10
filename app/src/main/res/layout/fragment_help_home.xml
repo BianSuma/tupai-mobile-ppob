@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.pajakku.tupaimobile.fragment.HelpHomeFragment">
+
+    <com.pajakku.tupaimobile.component.AppActionBar
+        android:id="@+id/helphome_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        app:title="@string/helphome_page_title"
+        />
+
+    <TextView
+        android:id="@+id/helphome_label_top"
+        style="@style/LabelGuide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/helphome_actionbar"
+        android:text="@string/helphome_label_top"/>
+
+    <ListView
+        android:id="@+id/helphome_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/helphome_label_top"
+        />
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/helphome_listview"-->
+        <!--android:orientation="vertical"-->
+        <!--&gt;-->
+
+        <!--<com.pajakku.tupaimobile.component.HelpHomeButton-->
+            <!--android:id="@+id/helphome_btn_ssp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:left_img="@drawable/ic_help_ssp"-->
+            <!--app:text="@string/helphome_btn_ssp"-->
+            <!--app:sub_text="@string/helphome_btn_ssp_sub"-->
+            <!--/>-->
+
+        <!--<com.pajakku.tupaimobile.component.HelpHomeButton-->
+            <!--android:id="@+id/helphome_btn_activatemcash"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:left_img="@drawable/ic_help_activatemcash"-->
+            <!--app:text="@string/helphome_btn_activatemcash"-->
+            <!--app:sub_text="@string/helphome_btn_activatemcash_sub"-->
+            <!--/>-->
+
+        <!--<com.pajakku.tupaimobile.component.HelpHomeButton-->
+            <!--android:id="@+id/helphome_btn_payssp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:left_img="@drawable/ic_help_payssp"-->
+            <!--app:text="@string/helphome_btn_payssp"-->
+            <!--app:sub_text="@string/helphome_btn_payssp_sub"-->
+            <!--/>-->
+
+        <!--<com.pajakku.tupaimobile.component.HelpHomeButton-->
+            <!--android:id="@+id/helphome_btn_callus"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:left_img="@drawable/ic_help_callus"-->
+            <!--app:text="@string/helphome_btn_callus"-->
+            <!--app:sub_text="@string/helphome_btn_callus_sub"-->
+            <!--/>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/helphome_btn_call_us"-->
+        <!--style="@style/AppButton"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_margin="@dimen/layout_content_pad"-->
+        <!--android:text="@string/helphome_btn_callus"/>-->
+
+</RelativeLayout>

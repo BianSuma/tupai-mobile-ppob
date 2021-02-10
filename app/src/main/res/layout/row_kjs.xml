@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/layout_content_pad"
+    android:background="@drawable/bg_listitem"
+    >
+
+    <TextView
+        android:id="@+id/rowkjs_code"
+        android:layout_width="@dimen/button_height"
+        android:layout_height="@dimen/button_height"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@drawable/bg_labelcircle_wpinitname"
+        />
+
+    <TextView
+        android:id="@+id/rowkjs_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/rowkjs_code"
+        android:layout_marginLeft="@dimen/layout_content_pad"
+        android:layout_centerVertical="true"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>

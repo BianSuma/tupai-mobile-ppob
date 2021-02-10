@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.pajakku.tupaimobile.fragment.PayTax0KJSFragment">
+
+    <com.pajakku.tupaimobile.component.AppActionBar
+        android:id="@+id/paytax0kjs_appactionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="@string/paytax0kjs_page_title"
+        />
+
+    <com.pajakku.tupaimobile.component.TaxWPHeader
+        android:id="@+id/paytaxkjs_taxwpheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paytax0kjs_appactionbar"
+        />
+
+    <com.pajakku.tupaimobile.component.QuickFindPanel
+        android:id="@+id/paytaxkjs_listfindpanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paytaxkjs_taxwpheader"
+        />
+
+    <RelativeLayout
+        android:id="@+id/paytax0kjs_recent_layoutwrap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paytaxkjs_listfindpanel"
+        android:visibility="gone"
+        >
+    <TextView
+        android:id="@+id/paytax0kjs_label_recenttitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_content_pad"
+        android:textColor="#aaaaaa"
+        android:text="@string/paytax0kjs_recent_code"
+        />
+
+        <RelativeLayout
+            android:id="@+id/paytax0kjs_recent_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/paytax0kjs_label_recenttitle"
+            android:layout_marginBottom="@dimen/holo_shadow_pad"
+            android:padding="@dimen/layout_content_pad"
+            android:background="@drawable/bg_listitem"
+            >
+            <TextView
+                android:id="@+id/paytax0kjs_recent_code"
+                android:layout_width="@dimen/button_height"
+                android:layout_height="@dimen/button_height"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@drawable/bg_labelcircle_wpinitname"
+                />
+
+            <TextView
+                android:id="@+id/paytax0kjs_recent_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/paytax0kjs_recent_code"
+                android:layout_marginLeft="@dimen/layout_content_pad"
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/paytaxkjs_swiperefreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paytax0kjs_recent_layoutwrap"
+        >
+        <com.pajakku.tupaimobile.component.AppRecyclerView
+            android:id="@+id/paytaxkjs_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <View
+        android:id="@+id/paytaxkjs_qhelp_invis"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qhelp_invisview_height"
+        android:layout_below="@+id/paytax0kjs_recent_layoutwrap"
+        android:layout_margin="@dimen/qhelp_invisview_margin"
+        android:background="@android:color/transparent"
+        />
+
+</RelativeLayout>

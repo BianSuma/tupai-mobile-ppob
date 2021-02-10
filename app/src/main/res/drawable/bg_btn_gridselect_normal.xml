@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <corners android:radius="@dimen/griditem_wp_corner" />
+            <solid android:color="@android:color/white" />
+            <stroke
+                android:width="@dimen/taxicon_border_size"
+                android:color="@color/griditem_wp_shadow" />
+        </shape>
+    </item>
+</layer-list>

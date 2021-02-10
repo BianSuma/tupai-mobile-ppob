@@ -1,0 +1,149 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.pajakku.tupaimobile.fragment.PayTax2PeriodFragment">
+
+    <com.pajakku.tupaimobile.component.AppActionBar
+        android:id="@+id/paypphperiod_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="@string/paytax2period_page_title"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <com.pajakku.tupaimobile.component.TaxWPHeader
+                android:id="@+id/paytaxperiod_taxwpheader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/paytaxperiod_taxwpheader"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/paypphperiod_label_guide"
+                    style="@style/LabelGuide"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/paypphperiod_label_guide"
+                    />
+
+                <Spinner
+                    android:id="@+id/paypphperiod_spin_month0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_content_pad"
+                    />
+
+                <Spinner
+                    android:id="@+id/paypphperiod_spin_month1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_content_pad"
+                    />
+
+                <com.pajakku.tupaimobile.component.AppEditText
+                    android:id="@+id/paypphperiod_inp_year"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_content_pad"
+                    android:inputType="number"
+                    app:hint="@string/paypphperiod_hint_year"/>
+
+                <!-- SETOR -->
+                <!--TextView
+                    style="@style/LabelGuide"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_content_pad"
+                    android:text="@string/paypphsetor_label_guide"
+                    />
+
+                <Button
+                    android:id="@+id/paytaxperiod_btn_calculatesetor"
+                    style="@style/AppButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_content_pad"
+                    android:text="@string/paypphsetor_btn_calculatesetor"/>
+
+                <com.pajakku.tupaimobile.component.AppEditText
+                    android:id="@+id/paytaxperiod_inp_setoramount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_content_pad"
+                    android:inputType="number"
+                    app:hint="@string/paypphsetor_hint_setoramount"/>
+
+                <com.pajakku.tupaimobile.component.AppEditText
+                    android:id="@+id/paytaxperiod_inp_terbilang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_content_pad"
+                    android:focusable="false"
+                    android:inputType="textMultiLine"
+                    android:maxLines="3"
+                    app:hint="@string/paypphsetor_hint_terbilang"/-->
+
+                <!-- No SK dan NOP -->
+                <!--TextView
+                    style="@style/LabelGuide"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_content_pad"
+                    android:text="@string/paytaxperiodsetor_label_guide_nosk_nop"
+                    />
+
+                <com.pajakku.tupaimobile.component.AppEditText
+                    android:id="@+id/paytaxperiodsetor_inp_sk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_content_pad"
+                    app:hint="@string/paypphsksop_hint_sk" />
+
+                <com.pajakku.tupaimobile.component.AppEditText
+                    android:id="@+id/paytaxperiodsetor_inp_nop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_content_pad"
+                    app:hint="@string/paypphsksop_hint_nop" />
+
+                <com.pajakku.tupaimobile.component.AppEditText
+                    android:id="@+id/paytaxperiodsetor_inp_npwppenyetor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_content_pad"
+                    android:inputType="number"
+                    app:hint="@string/paypphsknop_hint_npwppenyetor" /-->
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/paypphperiod_btn_next"
+        style="@style/AppButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_margin="@dimen/layout_content_pad"
+        android:text="@string/paypphperiod_btn_next"
+        />
+
+</LinearLayout>

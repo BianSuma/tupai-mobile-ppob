@@ -1,0 +1,50 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.pajakku.tupaimobile.fragment.Spt1IntroFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/spt0intro_label_sptalias"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/holo_shadow_pad"
+            android:background="@drawable/bg_labelcircle_wpinitname"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/spt0intro_label_sptname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spt0intro_label_sptalias"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/spt0intro_label_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spt0intro_label_sptname"
+            android:layout_margin="@dimen/holo_shadow_pad"
+            />
+
+        <com.pajakku.tupaimobile.component.AppButton
+            android:id="@+id/spt0intro_btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/layout_content_pad"
+            android:text="@string/spt0intro_btn_next"
+            />
+
+    </RelativeLayout>
+
+</FrameLayout>

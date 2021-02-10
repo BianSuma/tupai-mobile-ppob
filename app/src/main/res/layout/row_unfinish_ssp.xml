@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/layout_content_pad"
+    android:background="@drawable/bg_listitem"
+    >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/rowunfinishssp_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/global_img_desc"
+            android:padding="@dimen/layout_content_pad"
+            />
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/rowunfinishssp_icon"
+            android:paddingLeft="5dp">
+
+            <TextView
+                android:id="@+id/rowunfinishssp_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/rowunfinishssp_npwp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rowunfinishssp_name"
+                android:visibility="gone"
+                />
+            <TextView
+                android:id="@+id/rowunfinishssp_taxdetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rowunfinishssp_npwp"
+                android:textColor="#adadad"
+                />
+            <TextView
+                android:id="@+id/rowunfinishssp_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rowunfinishssp_taxdetail"
+                android:textColor="@color/rowssp_mount_billid"
+                android:textSize="@dimen/rowssp_fontsize_amountbillid"
+                />
+            <TextView
+                android:id="@+id/rowunfinishssp_bilcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/rowunfinishssp_amount"
+                android:layout_alignTop="@+id/rowunfinishssp_amount"
+                android:layout_marginLeft="@dimen/holo_shadow_pad"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="@dimen/rowssp_fontsize_amountbillid"
+                />
+            <TextView
+                android:id="@+id/rowunfinishssp_bilcodepajakku"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rowunfinishssp_amount"
+                android:textColor="#ff7d28"
+                android:visibility="gone"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/rowunfinishssp_rightarrow"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_rightarrow"
+        android:contentDescription="@string/global_img_desc"
+        />
+
+    <CheckBox
+        android:id="@+id/rowunfinishssp_selected"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:focusable="false"
+        />
+
+    <!-- STATUS -->
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/rowunfinishssp_lbl_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/gap3"
+        android:background="@android:color/holo_blue_bright"
+        android:typeface="sans"
+        android:textSize="9sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        />
+
+</RelativeLayout>

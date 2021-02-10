@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rowgriditem_layout_row"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/layout_content_pad"
+    >
+
+    <ImageView
+        android:id="@+id/rowgriditem_icon"
+        android:layout_width="@dimen/fraghome_griditem_width"
+        android:layout_height="@dimen/fraghome_griditem_height"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/global_img_desc"
+        />
+
+    <TextView
+        android:id="@+id/rowgriditem_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/rowgriditem_icon"
+        android:layout_margin="@dimen/layout_content_pad"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:id="@+id/rowgriditem_spacer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/rowgriditem_icon"
+        android:layout_margin="@dimen/layout_content_pad"
+        android:textAlignment="center"
+        android:textColor="@android:color/transparent"
+        android:textSize="14sp"
+        android:text=" \n "
+        />
+
+    <TextView
+        android:id="@+id/rowgriditem_pasalcount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/rowgriditem_name"
+        android:textColor="#b5b5b5"
+        android:textSize="11sp"
+        />
+
+</RelativeLayout>

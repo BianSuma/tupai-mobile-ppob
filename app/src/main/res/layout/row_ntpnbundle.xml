@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/layout_content_pad"
+    android:background="@drawable/bg_listitem"
+    >
+
+    <TextView
+        android:id="@+id/rowntpnbundle_ntpn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_content_pad"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/rowntpnbundle_period"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_content_pad"
+        android:layout_below="@+id/rowntpnbundle_ntpn"
+        />
+    <TextView
+        android:id="@+id/rowntpnbundle_setor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/holo_shadow_pad"
+        android:layout_alignTop="@+id/rowntpnbundle_period"
+        android:layout_toRightOf="@+id/rowntpnbundle_period"
+        />
+
+</RelativeLayout>

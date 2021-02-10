@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/layout_content_pad"
+    android:background="@drawable/bg_listitem"
+    >
+
+    <!-- TODO: fix icon -->
+    <!--<ImageView-->
+        <!--android:id="@+id/rowwp_icon"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:contentDescription="@string/global_img_desc"-->
+        <!--android:visibility="gone"-->
+        <!--/>-->
+
+
+    <TextView
+        android:id="@+id/rowwp_iconlabel_initname"
+        android:layout_width="@dimen/button_height"
+        android:layout_height="@dimen/button_height"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:background="@drawable/bg_labelcircle_wpinitname"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/rowwp_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/rowwp_iconlabel_initname"
+        android:layout_marginLeft="@dimen/layout_content_pad"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/rowwp_npwp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rowwp_name"
+        android:layout_below="@+id/rowwp_name"
+        android:textSize="14sp"
+        />
+    <TextView
+        android:id="@+id/rowwp_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rowwp_npwp"
+        android:layout_below="@+id/rowwp_npwp"
+        android:layout_toLeftOf="@+id/rowwajibpajak_righticon"
+        android:textSize="12sp"
+        />
+
+    <ImageView
+        android:id="@+id/rowwajibpajak_righticon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_rightarrow"
+        android:contentDescription="@string/global_img_desc"
+        />
+
+</RelativeLayout>

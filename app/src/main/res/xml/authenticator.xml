@@ -1,0 +1,12 @@
+<account-authenticator xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accountType="@string/key_account_type"
+    android:icon="@mipmap/ic_launcher"
+    android:smallIcon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    />
+<!--<account-authenticator xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:accountType="com.pajakku.tupai"-->
+<!--android:icon="@mipmap/ic_launcher"-->
+<!--android:smallIcon="@mipmap/ic_launcher"-->
+<!--android:label="@string/app_name"-->
+<!--android:accountPreferences="@xml/auth_pref" />-->

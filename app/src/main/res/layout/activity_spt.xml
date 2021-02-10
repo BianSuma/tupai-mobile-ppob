@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_spt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pajakku.tupaimobile.activity.SptActivity">
+
+    <com.pajakku.tupaimobile.component.AppActionBar
+        android:id="@+id/activityspt_appactionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="@string/activityspt_page_title"
+        />
+    <com.tech.freak.wizardpager.ui.StepPagerStrip
+        android:id="@+id/activityspt_steppagerstrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activityspt_appactionbar"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/holo_shadow_pad"
+        />
+
+    <com.pajakku.tupaimobile.component.NonSwipeableViewPager
+        android:id="@+id/activityspt_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/activityspt_steppagerstrip"
+        />
+
+    <!-- TODO: @warn disable SPT -->
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_margin="30dp"-->
+        <!--android:background="#88dddddd"-->
+        <!--&gt;-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_margin="@dimen/layout_content_pad"-->
+            <!--android:textAlignment="center"-->
+            <!--android:textColor="#c1ec3333"-->
+            <!--android:text="@string/global_noticelabel_sptnonactive"/>-->
+    <!--</RelativeLayout>-->
+
+</RelativeLayout>

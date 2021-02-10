@@ -1,0 +1,40 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.pajakku.tupaimobile.fragment.Spt5PeredaranBrutoFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:id="@+id/spt5bruto_label_guide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_content_pad"
+            android:textAlignment="center"
+            android:text="@string/spt5bruto_label_guide"
+            />
+
+        <com.pajakku.tupaimobile.component.AppListView
+            android:id="@+id/spt5bruto_applistview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/spt5bruto_label_guide"
+            android:layout_above="@+id/spt5bruto_btn_next"
+            />
+
+        <com.pajakku.tupaimobile.component.AppButton
+            android:id="@+id/spt5bruto_btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/layout_content_pad"
+            android:text="@string/spt5bruto_btn_next"
+            />
+
+    </RelativeLayout>
+
+</FrameLayout>

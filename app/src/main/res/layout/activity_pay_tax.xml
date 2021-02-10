@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PayTaxActivity">
+
+    <com.pajakku.tupaimobile.component.NonSwipeableViewPager
+        android:id="@+id/paytax_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <com.pajakku.tupaimobile.component.FilterView
+        android:id="@+id/paytax_filterview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

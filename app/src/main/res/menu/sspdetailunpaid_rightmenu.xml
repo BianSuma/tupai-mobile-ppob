@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/sspdetailunpaid_btnmenu_quickhelp"
+        app:showAsAction="always"
+        android:title="@string/global_toprightbtn_quickhelp" />
+    <item
+        android:id="@+id/sspdetail_btnmenu_delssp"
+        app:showAsAction="ifRoom"
+        android:title="@string/sspdetailunfinish_btn_delssp" />
+</menu>

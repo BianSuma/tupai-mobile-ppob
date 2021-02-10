@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LayoutEmbossShadow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <ImageView
+        android:id="@+id/rowpulsaproduct_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/global_img_desc"/>
+
+
+    <TextView
+        android:id="@+id/rowpulsaproduct_operator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/rowpulsaproduct_icon"
+        android:layout_marginLeft="@dimen/layout_content_pad"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/rowpulsaproduct_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rowpulsaproduct_operator"
+        android:layout_alignLeft="@+id/rowpulsaproduct_operator"
+        />
+    <TextView
+        android:id="@+id/rowpulsaproduct_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rowpulsaproduct_name"
+        android:layout_alignLeft="@+id/rowpulsaproduct_name"
+        android:textColor="#099c09"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_rightarrow"
+        android:contentDescription="@string/global_img_desc"/>
+
+</RelativeLayout>

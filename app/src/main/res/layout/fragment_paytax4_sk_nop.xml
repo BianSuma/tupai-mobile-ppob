@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.pajakku.tupaimobile.fragment.PayTax4SkNopFragment">
+
+    <com.pajakku.tupaimobile.component.AppActionBar
+        android:id="@+id/paypphsksop_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="@string/paytaxsknop_page_title"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <com.pajakku.tupaimobile.component.TaxWPHeader
+                android:id="@+id/paytaxsksop_taxwpheader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/paytaxsksop_taxwpheader"
+                android:orientation="vertical"
+                >
+                <TextView
+                    style="@style/LabelGuide"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/paytaxsknop_label_guide"
+                    />
+
+                <com.pajakku.tupaimobile.component.AppEditText
+                    android:id="@+id/paypphsksop_inp_sk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_content_pad"
+                    app:hint="@string/paypphsksop_hint_sk" />
+
+                <com.pajakku.tupaimobile.component.AppEditText
+                    android:id="@+id/paypphsksop_inp_nop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_content_pad"
+                    app:hint="@string/paypphsksop_hint_nop" />
+
+                <com.pajakku.tupaimobile.component.AppEditText
+                    android:id="@+id/paypphsksop_inp_npwppenyetor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/layout_content_pad"
+                    app:hint="@string/paypphsknop_hint_npwppenyetor" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/paypphsksop_btn_next"
+        style="@style/AppButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_margin="@dimen/layout_content_pad"
+        android:text="@string/paytaxsknop_btn_next"
+        />
+
+</LinearLayout>

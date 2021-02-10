@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.pajakku.tupaimobile.fragment.HelpSSPFragment">
+
+    <com.pajakku.tupaimobile.component.AppActionBar
+        android:id="@+id/helpssp_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="@string/helpssp_label_page_title"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/helpssp_actionbar"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/layout_content_pad">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/helpcontent_subtitle_indent"
+                android:textStyle="bold"
+                android:text="Berikut langkah-langkah membuat SSP"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_content_pad"
+                android:text="1. Pilih tipe pajak di bagian [Beranda]"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_content_pad"
+                android:text="2. Pilih salah satu kode setoran."
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_content_pad"
+                android:text="3. Pilih WP. Jika tidak ada, klik tambahkan."
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_content_pad"
+                android:text="4. Tentukan masa pajak."
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_content_pad"
+                android:text="5. Isi jumlah setoran."
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_content_pad"
+                android:text="6. Isi Nomor SK / NOP / Penyetor bila diperlukan."
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_content_pad"
+                android:text="7. Periksa data dan klik simpan."
+                />
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/layout_content_pad"-->
+                <!--android:text="8. Ketersediaan kode billing bisa diperiksa dengan cara me-reload data di bagian SSP."-->
+                <!--/>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="@dimen/helpcontent_subtitle_indent"-->
+                <!--android:layout_marginTop="@dimen/layout_content_pad"-->
+                <!--android:textStyle="bold"-->
+                <!--android:text="2. Generate Kode Billing"-->
+                <!--/>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/layout_content_pad"-->
+                <!--android:text="2.1. Pilih salah satu SSP di bagian [SSP]."-->
+                <!--/>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/layout_content_pad"-->
+                <!--android:text="2.2. Klik Generate Kode Billing di sisi bawah."-->
+                <!--/>-->
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

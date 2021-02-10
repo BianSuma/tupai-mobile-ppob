@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CameraKitActivity"
+    >
+
+    <!-- ACTION BAR -->
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:id="@+id/camerakit_lay_actionbar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="@dimen/actionbar_height"-->
+<!--        android:background="@color/actionbar_mainbar"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        >-->
+
+<!--        <androidx.appcompat.widget.AppCompatImageView-->
+<!--            android:id="@+id/camerakit_btn_actionbar_left"-->
+<!--            android:layout_width="@dimen/actionbar_height"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="@drawable/bg_highlight_common"-->
+<!--            android:padding="@dimen/gap14"-->
+<!--            app:srcCompat="@drawable/ic_arrowleft_white"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            />-->
+
+<!--        <androidx.appcompat.widget.AppCompatTextView-->
+<!--            android:id="@+id/camerakit_lbl_title"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="@color/actionbar_title"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            />-->
+
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--    <View-->
+<!--        android:id="@+id/camerakit_actionbar_shadow"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="@dimen/gap7"-->
+<!--        android:background="@drawable/shadow"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/camerakit_lay_actionbar"-->
+<!--        />-->
+
+    <!-- VIDEO -->
+
+<!--    <SurfaceView-->
+<!--        android:id="@+id/camerakit_surfaceview"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_marginTop="@dimen/gap7"-->
+<!--        android:orientation="horizontal"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/camerakit_img_thumbnail"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/camerakit_btn_ok"-->
+<!--        />-->
+
+    <com.otaliastudios.cameraview.CameraView
+        android:id="@+id/camerakit_inp_cameraview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:keepScreenOn="true"
+        app:cameraMode="video"
+        app:cameraEngine="camera1"
+        app:cameraPreview="glSurface"
+        app:cameraFacing="front"
+        app:cameraAudio="off"
+        app:cameraRequestPermissions="true"
+        app:cameraExperimental="false"
+        app:cameraPlaySounds="false"
+        app:cameraUseDeviceOrientation="false"
+        />
+
+<!--    <com.otaliastudios.cameraview.CameraView-->
+<!--        android:id="@+id/camerakit_inp_cameraview"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        app:cameraPictureSizeSmallest="true"-->
+<!--        app:cameraPictureSizeBiggest="false"-->
+<!--        app:cameraVideoSizeSmallest="true"-->
+<!--        app:cameraVideoSizeBiggest="false"-->
+<!--        app:cameraGestureTap="takePicture"-->
+<!--        app:cameraGestureLongTap="autoFocus"-->
+<!--        app:cameraGesturePinch="zoom"-->
+<!--        app:cameraGestureScrollHorizontal="none"-->
+<!--        app:cameraGestureScrollVertical="none"-->
+<!--        app:cameraEngine="camera1"-->
+<!--        app:cameraPreview="texture"-->
+<!--        app:cameraPreviewFrameRateExact="false"-->
+<!--        app:cameraFacing="front"-->
+<!--        app:cameraHdr="on"-->
+<!--        app:cameraFlash="auto"-->
+<!--        app:cameraWhiteBalance="auto"-->
+<!--        app:cameraMode="video"-->
+<!--        app:cameraAudio="off"-->
+<!--        app:cameraGrid="off"-->
+<!--        app:cameraPlaySounds="false"-->
+<!--        app:cameraVideoCodec="deviceDefault"-->
+<!--        app:cameraAutoFocusMarker="@string/cameraview_default_autofocus_marker"-->
+<!--        app:cameraUseDeviceOrientation="true"-->
+<!--        app:cameraPictureMetering="false"-->
+<!--        app:cameraPictureSnapshotMetering="false"-->
+<!--        app:cameraPictureFormat="jpeg"-->
+<!--        app:cameraRequestPermissions="true"-->
+<!--        app:cameraExperimental="false"-->
+<!--        />-->
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/camerakit_lbl_ticksec"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/gap7"
+        android:layout_margin="@dimen/gap14"
+        android:background="@android:color/white"
+        android:typeface="sans"
+        app:layout_constraintBottom_toTopOf="@+id/camerakit_btn_record"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <!-- BTN OK -->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/camerakit_btn_record"
+        style="@style/AppButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_margin="@dimen/gap14"
+        android:text="Rekam"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

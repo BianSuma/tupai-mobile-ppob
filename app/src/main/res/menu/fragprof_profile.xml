@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/fragprof_toprightbtn_about"
+        app:showAsAction="ifRoom"
+        android:title="@string/global_toprightbtn_about" />
+    <item
+        android:id="@+id/fragprof_btnmenu_logout"
+        app:showAsAction="always"
+        android:title="@string/global_toprightbtn_logout" />
+</menu>

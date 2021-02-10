@@ -1,0 +1,1026 @@
+<resources>
+    <string name="app_name">Tupai Mobile</string>
+    <string name="key_account_type">com.pajakku.tupaimobile</string>
+    <string name="global_package_name">com.pajakku.tupaimobile</string>
+    <string name="deeplink_scheme">app</string>
+    <string name="deeplink_host">com.pajakku.tupaimobile</string>
+
+    <string name="global_save">Simpan</string>
+
+    <string name="global_img_desc">img</string>
+    <string name="global_confirm">Konfirmasi</string>
+    <string name="global_yes">Ya</string>
+    <string name="global_no">Tidak</string>
+    <string name="global_toast_unable_access_server">Server %1$s tidak bisa diakses.</string>
+    <string name="global_toast_connecttimeout">Connection timeout.</string>
+    <string name="global_toast_server_return_code">Akses gagal. HTTP code %1$d.</string>
+    <string name="global_toast_unauthorized">Tidak punya otorisasi. Coba logout dan login ulang.</string>
+    <string name="global_toast_autologinsuccess">Login otomatis sukses. Silahkan coba lagi</string>
+    <string name="global_toast_accessnoauth">Gagal otorisasi. Silahkan coba lagi.</string>
+    <string name="global_toast_failrelogin">Login ulang gagal.</string>
+    <string name="global_toast_emonsessionexpire">Tidak punya sesi. Silahkan coba lagi</string>
+    <string name="global_dialogprogress_btn_cancel">Batal</string>
+    <string name="global_version">Ver. %1$s</string>
+    <string name="global_toprightbtn_quickhelp">Bantuan Singkat</string>
+    <string name="global_toprightbtn_about">Tentang Aplikasi</string>
+    <string name="global_toprightbtn_logout">Log-out</string>
+    <string name="global_cancel">Batal</string>
+
+    <string name="clutility_validator_mandatory">Wajib diisi</string>
+    <string name="clutility_validator_minimum">Minimal %1$d karakter</string>
+
+    <!-- TODO: @warn disable SPT -->
+    <string name="global_noticelabel_sptnonactive">Untuk sementara,\nfungsi SPT tidak aktif.</string>
+
+    <string name="global_dialoginfo_btn_close">Tutup</string>
+    <string name="global_dialoginfo_label_topupdesc">Top Up Tupai Saldo</string>
+    <string name="global_dialoginfo_label_succestopupmsg">Selamat, Pembayaran Top Up Tupai Saldo Anda telah berhasil!</string>
+    <string name="listfindpanel_hint_find">Cari&#8230;</string>
+
+    <string name="modellabel_sptdraft">SPT dapat di-edit sebelum dilaporkan.</string>
+    <string name="modellabel_sptsubmit">SPT terkirim. Menunggu hasil laporan.</string>
+    <string name="modellabel_sptdone">SPT sudah berhasil dilaporkan.</string>
+
+    <string name="rowbrutotax_hint_workaddress">Alamat Usaha</string>
+
+    <!-- RADIO VALUE -->
+
+    <string name="radiovalue_gender_man">L</string>
+    <string name="radiovalue_gender_woman">P</string>
+
+    <string name="radiovalue_nikah_yes">1</string>
+    <string name="radiovalue_nikah_no">2</string>
+
+    <string name="radiovalue_tanggungan_0">0</string>
+    <string name="radiovalue_tanggungan_1">1</string>
+    <string name="radiovalue_tanggungan_2">2</string>
+    <string name="radiovalue_tanggungan_3">3</string>
+
+    <string name="radiovalue_jmlpenghasilan_kurang">1</string>
+    <string name="radiovalue_jmlpenghasilan_4jt">2</string>
+    <string name="radiovalue_jmlpenghasilan_10jt">3</string>
+    <string name="radiovalue_jmlpenghasilan_15jt">4</string>
+    <string name="radiovalue_jmlpenghasilan_20jt">5</string>
+
+    <string name="radiovalue_metodebuku_buku">0</string>
+    <string name="radiovalue_metodebuku_catat">1</string>
+
+    <string name="radiovalue_punyakaryawan_yes">0</string>
+    <string name="radiovalue_punyakaryawan_no">1</string>
+
+    <!-- PROGRESS DIALOG -->
+
+    <string name="progressdialog_common">Akses server&#8230;</string>
+    <string name="progressdialog_authorize">Otorisasi&#8230;</string>
+    <string name="progressdialog_accesstoken">Akses token&#8230;</string>
+    <string name="progressdialog_userdata">Akses data pengguna&#8230;</string>
+    <string name="progressdialog_taxtype">Mengambil tipe pajak&#8230;</string>
+    <string name="progressdialog_ssp">Mengambil SSP&#8230;</string>
+    <string name="progressdialog_translog">Mengambil data transaksi&#8230;</string>
+    <string name="progressdialog_generateidbill">ID Billing&#8230;</string>
+    <string name="progressdialog_register">Register&#8230;</string>
+    <string name="progressdialog_kjs">Mengambil KJS&#8230;</string>
+    <string name="progressdialog_wp">Mengambil WP&#8230;</string>
+    <string name="progressdialog_savewp">Simpan WP&#8230;</string>
+    <string name="progressdialog_updatewp">Perbarui WP&#8230;</string>
+    <string name="progressdialog_delorganization">Hapus WP&#8230;</string>
+    <string name="progressdialog_finnetinquiry">Cek kode billing&#8230;</string>
+    <string name="progressdialog_checksspstatus">Generate kode billing&#8230;</string>
+    <string name="progressdialog_mcashtransaction">Mulai transaksi&#8230;</string>
+    <string name="progressdialog_saventpn">Simpan NTPN&#8230;</string>
+    <string name="progressdialog_sendproblem">Lapor masalah&#8230;</string>
+    <string name="progressdialog_resetpass">Reset password&#8230;</string>
+    <string name="progressdialog_createssp">Simpan SSP&#8230;</string>
+    <string name="progressdialog_delssp">Hapus SSP&#8230;</string>
+    <string name="progressdialog_mctoken">Token mobile cash&#8230;</string>
+    <string name="progressdialog_accesstopup">Akses top-up&#8230;</string>
+    <string name="progressdialog_mcbalance">Mendapatkan saldo&#8230;</string>
+    <string name="progressdialog_savecompany">Simpan perusahaan&#8230;</string>
+    <string name="progressdialog_saveprofile">Simpan profile&#8230;</string>
+    <string name="progressdialog_reloadprofile">Reload profile&#8230;</string>
+    <string name="progressdialog_sendemonotp">Verifikasi OTP&#8230;</string>
+    <string name="progressdialog_inquirywp">Mendapatkan data WP&#8230;</string>
+    <string name="progressdialog_payssp">Bayar SSP&#8230;</string>
+    <string name="progressdialog_emonregisterphone">Aktivasi mobile cash&#8230;</string>
+    <string name="progressdialog_savefcm">Set sistem notifikasi&#8230;</string>
+    <string name="progressdialog_loadssp">Mengambil SSP&#8230;</string>
+    <string name="progressdialog_starttransaction">Memulai transaksi&#8230;</string>
+    <string name="progressdialog_createpdf">Membuat PDF&#8230;</string>
+    <string name="progressdialog_reportspt">Lapor SPT&#8230;</string>
+
+    <!-- component -->
+    <string name="comp_gridcollection_btn_reloadtaxtype">Reload Tipe Pajak</string>
+    <string name="comp_gridadapter_label_pasal">%1$d Pasal</string>
+    <string name="comp_topupwidget_label_saldo">Tupai Saldo</string>
+    <string name="comp_topupwidget_btn_topup">Top-up</string>
+    <string name="comp_topupwidget_label_nova">No. VA: %1$s</string>
+    <string name="comp_topupwidget_label_activatemcash">Aktivasi mobile cash?</string>
+    <string name="comp_topupwidget_btn_activatemcash">AKTIVASI M-CASH</string>
+    <string name="comp_topupwidget_toast_loading">Sistem sedang memuat.</string>
+    <string name="comp_paymethodbutton_label_va">Tupai Saldo Anda (VA: %1$s)</string>
+    <string name="comp_paymentprice_label_product">Nama Produk</string>
+    <string name="comp_paymentprice_label_paytax">Pembayaran Pajak</string>
+    <string name="comp_paymentprice_label_price">Harga</string>
+    <string name="comp_paymentprice_label_channelcost">Biaya Channel</string>
+    <string name="comp_paymentprice_label_totaltransfer">Jumlah Transfer</string>
+    <string name="comp_paymentprice_label_totalpay">Jumlah Bayar</string>
+    <string name="comp_tupaisaldobar_label_yoursaldo">Tupai Saldo Anda</string>
+    <string name="comp_tupaisaldobar_val_nova">No. VA: %1$s</string>
+    <string name="comp_topupnominal_topuptupaisaldo">Top Up Tupai Saldo</string>
+    <string name="comp_versionnoticebtn_updatenotice">Harap update ke versi terbaru.</string>
+    <string name="comp_taxwpheader_val_kap">Kode Akun Pajak (KAP): %1$s</string>
+    <string name="comp_taxwpheader_val_kapkjs">KAP: %1$s, KJS: %2$s</string>
+    <string name="comp_taxwpheader_val_taxaccount">%1$s (KAP: %2$s, KJS: %3$s)</string>
+    <string name="comp_taxwpheader_val_taxaccountperiod">%1$s (KAP: %2$s, KJS: %3$s) %4$s</string>
+    <string name="comp_taxwpheader_label_totalpay">Jumlah Bayar</string>
+    <string name="comp_finddialog_title">Pencarian Data</string>
+    <string name="comp_finddialog_inp_field">Kolom</string>
+    <string name="comp_finddialog_inp_query">Nilai</string>
+    <string name="comp_finddialog_valfilter_name">Nama</string>
+    <string name="comp_finddialog_valfilter_npwp">NPWP</string>
+    <string name="comp_finddialog_valfilter_year">Tahun</string>
+    <string name="comp_finddialog_btn_find">Cari</string>
+    <string name="comp_sspdetailrowinfo_validuntil">Berlaku sampai %1$s</string>
+    <string name="comp_filterview_label_title">Pencarian Data</string>
+    <string name="comp_filterview_label_titlesort">Pengurutan Data</string>
+    <string name="comp_filterview_label_findbytitle">Pencarian Berdasarkan</string>
+    <string name="comp_filterview_radio_findbyname">Nama</string>
+    <string name="comp_filterview_radio_findbynpwp">NPWP</string>
+    <string name="comp_filterview_radio_findbyyear">Tahun</string>
+    <string name="comp_filterview_radio_findbyaddress">Alamat</string>
+    <string name="comp_filterview_hint_findkey">Kata Kunci</string>
+    <string name="comp_filterview_label_sortbytitle">Pengurutan Berdasarkan</string>
+    <string name="comp_filterview_radio_sortbyname">Nama</string>
+    <string name="comp_filterview_radio_sortbynpwp">NPWP</string>
+    <string name="comp_filterview_radio_sortbyyear">Tahun</string>
+    <string name="comp_filterview_radio_sortbyaddress">Alamat</string>
+    <string name="comp_filterview_label_sortmethodtitle">Metode</string>
+    <string name="comp_filterview_radio_sortasc">Urut naik</string>
+    <string name="comp_filterview_radio_sortdesc">Urut turun</string>
+    <string name="comp_filterview_btn_apply">Terapkan</string>
+    <string name="comp_findsortbutton_tv_find">Cari</string>
+    <string name="comp_findsortbutton_tv_sort">Urut</string>
+
+    <string name="util_validator_invalidinput">Terdapat isian yang tidak tepat.</string>
+    <string name="util_validator_mandatory">Wajib diisi.</string>
+    <string name="util_validator_minimum">Minimal %1$d karakter</string>
+    <string name="util_validator_maximum">Maksimal %1$d karakter</string>
+    <string name="util_validator_mismatchconfirm">Kolom konfirmasi tidak sesuai</string>
+    <string name="util_validator_nozeromoney">Kolom tidak boleh nol</string>
+
+    <string name="clbase_toast_couldnotbeaccess">Server %1$s tidak bisa diakses.</string>
+    <string name="clbase_toast_failresponsecode">Akses gagal. HTTP code %1$d.</string>
+    <string name="clbase_toast_accessnoauth">Gagal otorisasi. Silahkan coba lagi.</string>
+
+    <string name="monthname_0">Januari</string>
+    <string name="monthname_1">Februari</string>
+    <string name="monthname_2">Maret</string>
+    <string name="monthname_3">April</string>
+    <string name="monthname_4">Mei</string>
+    <string name="monthname_5">Juni</string>
+    <string name="monthname_6">Juli</string>
+    <string name="monthname_7">Agustus</string>
+    <string name="monthname_8">September</string>
+    <string name="monthname_9">Oktober</string>
+    <string name="monthname_10">November</string>
+    <string name="monthname_11">Desember</string>
+
+    <string name="monthnameshort_0">Jan</string>
+    <string name="monthnameshort_1">Feb</string>
+    <string name="monthnameshort_2">Mar</string>
+    <string name="monthnameshort_3">Apr</string>
+    <string name="monthnameshort_4">Mei</string>
+    <string name="monthnameshort_5">Jun</string>
+    <string name="monthnameshort_6">Jul</string>
+    <string name="monthnameshort_7">Agu</string>
+    <string name="monthnameshort_8">Sep</string>
+    <string name="monthnameshort_9">Okt</string>
+    <string name="monthnameshort_10">Nov</string>
+    <string name="monthnameshort_11">Des</string>
+
+    <string name="sspstatus_belumbayar">Belum Bayar</string>
+    <string name="sspstatus_done">Selesai</string>
+    <string name="sspdata_kapkjs">%1$s - %2$s, %3$s - %4$s</string>
+
+    <string name="paymentmethod_label_paytotal">Total Pembayaran %1$s</string>
+
+    <string name="login_hint_username">Username</string>
+    <string name="login_hint_password">Password</string>
+    <string name="login_btn_login"><b>LOGIN</b></string>
+    <string name="login_btn_signup"><b>DAFTAR</b></string>
+    <string name="login_btn_forget_password">Lupa password?</string>
+
+    <string name="splash_easy_pay">Mudah bayar pajak</string>
+
+    <string name="base_toast_noaccount">Akun tidak ditemukan</string>
+    <string name="base_toast_noauthtoken">Token otentikasi tidak ditemukan</string>
+
+    <string name="auth_toast_failrelogin">Otentikasi otomatis gagal.</string>
+
+    <string name="main_label_saldo">tupai saldo</string>
+    <string name="main_btn_topup">Top Up</string>
+    <string name="main_btn_home">Beranda</string>
+    <string name="main_btn_ssp">SSP</string>
+    <string name="main_btn_help">Bantuan</string>
+    <string name="main_btn_profile">Profil</string>
+    <string name="main_btn_spt">SPT</string>
+    <string name="main_notiflabel_title">Status Pembayaran</string>
+    <string name="main_notiflabel_bodysuccess">Transaksi bayar untuk SSP %1$s telah berhasil.</string>
+    <string name="main_notiflabel_bodyfail">Transaksi bayar untuk SSP %1$s gagal dilakukan.</string>
+    <string name="main_label_confirmbackmsg">Keluar aplikasi?</string>
+    <string name="main_label_outdateversion_title">Perbarui Versi</string>
+    <string name="main_label_outdateversion_body">Segera update aplikasi ini ke versi terbaru.</string>
+
+    <string name="listaction_btn_add">Tambah Data</string>
+    <string name="listaction_btn_find">Cari Data</string>
+    <string name="listaction_btn_sort">Urut Data</string>
+
+    <string name="fraghome_page_title">Tupai</string>
+    <string name="fraghome_hint_saldo">Tupai Saldo</string>
+    <string name="fraghome_qhelptitle_topup">Tombol Top-up</string>
+    <string name="fraghome_qhelpbody_topup">Klik tombol top-up untuk menambahkan saldo.</string>
+    <string name="fraghome_qhelptitle_wptype">Tipe Wajib Pajak</string>
+    <string name="fraghome_qhelpbody_wptype">Pilih UKM jika Anda termasuk pelaku bisnis UKM.</string>
+    <string name="fraghome_qhelptitle_tax">Jenis Pajak</string>
+    <string name="fraghome_qhelpbody_tax">Pilih jenis pajak PPh Final untuk UKM.</string>
+    <string name="fraghome_qhelptitle_taxtypelist">Daftar Jenis Pajak</string>
+    <string name="fraghome_qhelpbody_taxtypelist">Menampilkan jenis pajak beserta kodenya sebagai referensi.</string>
+    <string name="fraghome_qhelptitle_mainmenu">Menu Utama</string>
+    <string name="fraghome_qhelpbody_mainmenu">Navigasi menuju bagian beranda, SSP, Bantuan, dan Profil.</string>
+    <string name="fraghome_tax_payment">Pembayaran Pajak</string>
+    <string name="fraghome_btnmenu_reloadtaxtype">Reload tipe pajak</string>
+    <string name="fraghome_recent_tax">Pajak yang Diakses Terakhir</string>
+    <string name="fraghome_pay_pph">Bayar Pajak Penghasilan (PPh)</string>
+    <string name="fraghome_btn_taxpay_all">Semua</string>
+    <string name="fraghome_btn_taxpay_ukm">UKM</string>
+    <string name="fraghome_btn_pph_21">PPh 21</string>
+    <string name="fraghome_btn_top_up">Top Up</string>
+    <string name="fraghome_label_gridcategoryppn">Bayar Pajak Pertambahan Nilai (PPN)</string>
+    <string name="fraghome_label_gridcategorypbb">Bayar Pajak PBB</string>
+    <string name="fraghome_label_gridcategorybunga">Bayar Pajak Bunga Penagihan</string>
+    <string name="fraghome_label_gridcategorytaxmisc">Bayar Pajak Lainnya</string>
+    <string name="fraghome_label_gridcategoryother">Pembayaran Lainnya</string>
+    <string name="fraghome_griditem_all">Semua</string>
+    <string name="fraghome_griditem_ukm">UKM / UMKM</string>
+    <string name="fraghome_griditem_minyakbumi">Minyak Bumi</string>
+    <string name="fraghome_griditem_gasalam">Gas Alam</string>
+    <string name="fraghome_griditem_migas">Migas Lain</string>
+    <string name="fraghome_griditem_pph21">PPh 21</string>
+    <string name="fraghome_griditem_pph22">PPh 22</string>
+    <string name="fraghome_griditem_pph22impor">22 Impor</string>
+    <string name="fraghome_griditem_pph23">PPh 23</string>
+    <string name="fraghome_griditem_pph2539op">25/29 OP</string>
+    <string name="fraghome_griditem_pph2539badan">25/29 Badan</string>
+    <string name="fraghome_griditem_pph26">PPh 26</string>
+    <string name="fraghome_griditem_pphfinal">PPh Final</string>
+    <string name="fraghome_griditem_pphnonmigas">Nonmigas</string>
+    <string name="fraghome_griditem_pphfiskal">PPh Fiskal</string>
+    <string name="fraghome_griditem_ppndlmnegeri">Dlm Negeri</string>
+    <string name="fraghome_griditem_ppnimport">PPN Import</string>
+    <string name="fraghome_griditem_ppnlainnya">PPN Lainnya</string>
+    <string name="fraghome_griditem_ppnbmdlmnegeri">PPnBM DN</string>
+    <string name="fraghome_griditem_ppnbmimport">PPnBM Imp</string>
+    <string name="fraghome_griditem_ppnbmlainnya">PPN/PPnBM</string>
+    <string name="fraghome_griditem_pbbkebun">Pkebunan</string>
+    <string name="fraghome_griditem_pbbhutan">Phutanan</string>
+    <string name="fraghome_griditem_pbbminerba">MINERBA</string>
+    <string name="fraghome_griditem_pbbmigas">MIGAS</string>
+    <string name="fraghome_griditem_pbbpanasbumi">Panas Bumi</string>
+    <string name="fraghome_griditem_pbbp3sektor">P3 Sektor</string>
+    <string name="fraghome_griditem_beamaterai">Bea Materai</string>
+    <string name="fraghome_griditem_jualmaterai">Benda M.</string>
+    <string name="fraghome_griditem_pdptnpajaklain">Pdptan PL</string>
+    <string name="fraghome_griditem_tdklangsunglain">Tdk Lngsng</string>
+    <string name="fraghome_griditem_bungapph">P. PPh</string>
+    <string name="fraghome_griditem_bungappn">P. PPN</string>
+    <string name="fraghome_griditem_bungappnbm">P. PPnBM</string>
+    <string name="fraghome_griditem_bungaptll">PTLL</string>
+    <string name="fraghome_griditem_pulse">Isi Pulsa</string>
+    <string name="fraghome_griditem_pascabayar">Paket Data</string>
+    <string name="fraghome_griditem_tokenpln">Token PLN</string>
+    <string name="fraghome_griditem_tagihanpln">Tagihan PLN</string>
+    <string name="fraghome_griditem_bpjs">BPJS</string>
+    <string name="fraghome_griditem_indihome">Indihome</string>
+
+    <string name="fragssp_label_title">Surat Setoran Pajak</string>
+    <string name="fragssp_btn_unfinish">Belum Bayar</string>
+    <string name="fragssp_btn_finish">BPN</string>
+    <string name="fragssp_qhelptitle_sspcategory">Kategori SSP</string>
+    <string name="fragssp_qhelpbody_sspcategory">Menampilkan daftar SSP yang belum dan sudah dibayar.</string>
+    <string name="fragssp_qhelptitle_ssplist">Daftar SSP</string>
+    <string name="fragssp_qhelpbody_ssplist">Pilihan data SSP untuk menampilkan rincian dan membayarnya.</string>
+
+    <string name="helphome_page_title">Bantuan</string>
+    <string name="helphome_btnmenu_editprofile">Edit Profil</string>
+    <string name="helphome_btnmenu_reloadprofile">Reload Profil</string>
+    <string name="helphome_label_top">Pelajari lebih lanjut penggunaan Tupai</string>
+    <string name="helphome_btn_payssp">Bayar SSP</string>
+    <string name="helphome_btn_payssp_sub">Tentang langkah-langkah dalam pembayaran via Finnet untuk SSP yang telah dibuat.</string>
+    <string name="helphome_btn_activatemcash">Aktivasi Mobile Cash</string>
+    <string name="helphome_btn_activatemcash_sub">Aktivasi mobile cash perlu dilakukan agar pembayaran SSP berjalan dengan baik.</string>
+    <string name="helphome_btn_ssp">Surat Setoran Pajak (SSP)</string>
+    <string name="helphome_btn_ssp_sub">Tentang Surat Setoran Pajak (SSP) elektronik untuk mengisi informasi pembayaran pajak.</string>
+    <string name="helphome_btn_callus">Hubungi Kami</string>
+    <string name="helphome_btn_callus_sub">Pertanyaan lebih lanjut yang ingin disampaikan</string>
+
+    <string name="helptopup_label_page_title">Bantuan: Bayar SSP</string>
+
+    <string name="helpssp_label_page_title">Bantuan: SSP</string>
+
+    <string name="helpcallus_page_title">Hubungi Kami</string>
+    <string name="helpcallus_label_top">Silahkan sampaikan masalah Anda lebih lanjut</string>
+    <string name="helpcallus_hint_problem_detail">Deskripsi masalah</string>
+    <string name="helpcallus_hint_problem">Masalah</string>
+    <!--<string name="helpcallus_hint_problem_detail">Tuliskan deskripsi masalah Anda secara rinci. (Minimal 30 karakter)</string>-->
+    <string name="helpcallus_btn_send">Kirim</string>
+    <string name="helpcallus_toast_sentmsg">Terima kasih atas masukannya.</string>
+
+    <string name="helpactivatemcash_page_title">Aktivasi M-Cash</string>
+
+    <string name="fragprof_page_title">Profil</string>
+    <string name="fragprof_label_tabidentity">Identitas</string>
+    <string name="fragprof_label_wplist">Wajib Pajak</string>
+
+    <string name="profhome_label_page_title">Profil</string>
+    <string name="profhome_label_row_name">Username</string>
+    <string name="profhome_label_row_phone">Telepon</string>
+    <string name="profhome_label_row_email">Surel</string>
+    <string name="profhome_label_row_companyname">Perusahaan</string>
+    <string name="profhome_label_tupaisaldo">Tupai saldo</string>
+    <string name="profhome_label_row_topup">No. VA: %1$s</string>
+    <string name="profhome_btn_topup">Top Up</string>
+    <string name="profhome_btn_wp">Data Wajib Pajak</string>
+    <string name="profhome_btn_disclaimer">Syarat dan Ketentuan</string>
+    <string name="profhome_btn_policy">Kebijakan Privasi</string>
+    <string name="profhome_btn_transactionlog">Data Transaksi</string>
+    <string name="profhome_btn_sk">SK KEP DJP &amp; BI</string>
+    <string name="profhome_btn_logout">Log-out</string>
+    <string name="profhome_label_logoutmsg">Log-out akun?</string>
+
+    <string name="profwp_label_pagetitle">Wajib Pajak</string>
+
+    <string name="translog_label_pagetitle">Data Transaksi</string>
+    <string name="translog_label_statusproceed">Diproses</string>
+    <string name="translog_label_statusfail">Gagal</string>
+    <string name="translog_label_statussuccess">Sukses</string>
+    <string name="translog_label_transtypeunknown">Uknown</string>
+    <string name="translog_label_transtypepayssp">Bayar SSP</string>
+    <string name="translog_btnmenu_reload">Reload Transaksi</string>
+
+    <string name="profdisclaimer_label_pagetitle">Syarat dan Ketentuan</string>
+
+    <string name="profpolicy_label_pagetitle">Kebijakan Privasi</string>
+
+    <string name="profsk_page_title">SK</string>
+
+    <string name="editprof_page_title">Profil</string>
+    <string name="editprof_hint_username">Username</string>
+    <string name="editprof_hint_name">Nama</string>
+    <string name="editprof_hint_email">Surel</string>
+    <string name="editprof_hint_phone">Telepon</string>
+    <string name="editprof_hint_address">Alamat</string>
+    <string name="editprof_btn_save">Simpan</string>
+
+    <string name="topup_label_page_title">Top Up Saldo</string>
+    <string name="topupamount_label_topdesc">Tupai Saldo Anda</string>
+    <string name="topupamount_var_va">No. VA: %1$s</string>
+    <string name="topup_label_topguide">Pilih Nilai Top Up yang akan dibeli&#8230;</string>
+    <string name="topupamount_hint_topup">Pilihan Nilai Top Up</string>
+
+    <string name="topupamount_btn_pay">Bayar</string>
+
+    <string name="topupmethod_label_page_title">Pembayaran Top Up Saldo</string>
+    <string name="topupmethod_label_yoursaldo">Tupai Saldo Anda</string>
+    <string name="topupmethod_label_no_va">No. VA: %1$s</string>
+    <string name="topupmethod_label_selectmethod">Pilih metode pembayaran&#8230;</string>
+    <string name="topupmethod_label_subrow_banktransfer">TRANSFER BANK</string>
+    <string name="topupmethod_label_transfer_mandiriname">Bank Mandiri</string>
+    <string name="topupmethod_label_transfer_mandiridesc">Total Pembayaran %1$s</string>
+    <string name="topupmethod_label_transfer_bcaname">Bank BCA</string>
+    <string name="topupmethod_label_transfer_bcadesc">Total Pembayaran %1$s</string>
+    <string name="topupmethod_label_transfer_bniname">Bank BNI</string>
+    <string name="topupmethod_label_transfer_bnidesc">Total Pembayaran %1$s</string>
+    <string name="topupmethod_label_transfer_sinarmasname">Bank Sinarmas</string>
+    <string name="topupmethod_label_transfer_sinarmasdesc">Total Pembayaran %1$s</string>
+    <string name="topupmethod_label_cc_visafriendname">Visa, Master Card, GPN</string>
+    <string name="topupmethod_label_cc_visafrienddesc">Total Pembayaran %1$s</string>
+    <string name="topupmethod_label_subrow_cc">KARTU KREDIT</string>
+
+    <string name="topuppayguide_page_title_mandiri">Transfer Bank Mandiri</string>
+    <string name="topuppayguide_page_title_bca">Transfer Bank BCA</string>
+    <string name="topuppayguide_page_title_bni">Transfer Bank BNI</string>
+    <string name="topuppayguide_page_title_sinarmas">Transfer Bank Sinarmas</string>
+    <string name="topuppayguide_label_productname">Nama Produk</string>
+    <string name="topuppayguide_label_price">Harga</string>
+    <string name="topuppayguide_label_pricetransfer">Jumlah Transfer</string>
+    <string name="topuppayguide_label_payguide">Petunjuk pembayaran</string>
+
+    <string name="topuppaycc_page_title">Kartu Kredit</string>
+    <string name="topuppaycc_label_productname">Nama Produk</string>
+    <string name="topuppaycc_label_price">Harga</string>
+    <string name="topuppaycc_label_pricetransfer">Jumlah Bayar</string>
+    <string name="topuppaycc_label_guide">Data pembayaran</string>
+    <string name="topuppaycc_hint_cardnum">Nomor Kartu</string>
+    <string name="topuppaycc_hint_cardowner">Nama Pemegang Kartu</string>
+    <string name="topuppaycc_hint_address">Alamat</string>
+    <string name="topuppaycc_hint_validdate">Berlaku sampai</string>
+    <string name="topuppaycc_hint_cvv">CVV</string>
+    <string name="topuppaycc_btn_pay">Bayar</string>
+
+    <string name="welcome_label_subtitle">Mudah bayar pajak.</string>
+    <string name="welcome_btn_signup">Daftar</string>
+    <string name="welcome_btn_login">Login</string>
+    <string name="welcome_btn_facebook">facebook</string>
+    <string name="welcome_btn_google">Google</string>
+
+    <string name="resetpass_page_title">Reset Password</string>
+    <string name="resetpass_label_guide">Masukkan email.</string>
+    <string name="resetpass_hint_email">Email</string>
+    <string name="resetpass_btn_reset">Reset Password</string>
+    <string name="resetpass_toast_checkemail">Periksa email untuk reset password.</string>
+
+    <string name="signup_page_title">Daftar</string>
+    <string name="signup_label_guide">Silahkan mendaftar menggunakan nomor telepon dan email yang valid.</string>
+    <string name="signup_btn_register"><b>DAFTAR</b></string>
+    <string name="signup_btn_already_registered">Sudah punya akun? Login sekarang</string>
+    <string name="signup_hint_username">Username</string>
+    <string name="signup_hint_email">Email</string>
+    <string name="signup_hint_fullname">Nama Lengkap</string>
+    <string name="signup_hint_phone">Nomor Telepon Seluler</string>
+    <string name="signup_hint_password">Password</string>
+    <string name="signup_hint_password_confirm">Ulang Password</string>
+    <string name="signup_hint_term">Dengan mengklik Daftar, Anda menyetujui ketentuan yang berlaku dari pajakku.com</string>
+    <string name="signup_notif_successregister_title">Registrasi sukses</string>
+    <string name="signup_notif_successregister_body">Periksa email %1$s untuk aktivasi</string>
+
+    <string name="verifyemail_page_title">Verifikasi Email</string>
+    <string name="verifyemail_label_guide">Masukkan kode dari email.</string>
+    <string name="verifyemail_hint_code">Kode</string>
+    <string name="verifyemail_btn_send">Kirim</string>
+
+    <string name="sspunfinish_label_rowbillcode">Kode Billing: %1$s</string>
+    <string name="sspunfinish_label_rowbillcodepajakku">Kode Billing Pajakku: %1$s</string>
+    <string name="sspunfinish_btn_bulkdel">Hapus</string>
+    <string name="sspunfinish_btn_bulkpay">Bayar</string>
+    <string name="sspunfinish_btn_generateidbill">Generate ID Billing</string>
+
+    <string name="ssplist_label_taxdetail">%1$s  %2$s</string>
+
+    <string name="inputntpn_page_title">Isi NTPN</string>
+    <string name="inputntpn_label_topguide">Isikan NTPN untuk SSP</string>
+    <string name="inputntpn_hint_ntpn">NTPN</string>
+    <string name="inputntpn_btn_inputntpn">Isi NTPN</string>
+
+    <string name="dialogpaypphcreatewp_page_title">Buat Wajib Pajak Baru</string>
+    <string name="dialogpaypphcreatewp_hint_npwp">Nomor Pokok Wajib Pajak (NPWP)</string>
+    <string name="dialogpaypphcreatewp_hint_wpname">Nama Wajib Pajak</string>
+    <string name="dialogpaypphcreatewp_hint_address">Alamat Wajib Pajak</string>
+    <string name="dialogpaypphcreatewp_hint_city">Kota Wajib Pajak</string>
+    <string name="dialogpaypphcreatewp_btn_inquiry">Inkuiri Data Wajib Pajak</string>
+    <string name="dialogpaypphcreatewp_btn_save">Simpan</string>
+
+    <string name="sspfinish_label_rowntpn">NPTN: %1$s</string>
+    <string name="sspfinish_btn_bulkdel">Hapus</string>
+
+    <string name="sspdetaildone_page_title">Detail SSP</string>
+    <string name="sspdetaildone_btn_topedit">Edit</string>
+    <string name="sspdetailunpaid_btn_topinquiry">Inkuiri WP</string>
+    <string name="sspdetailunfinish_btn_topbillcode">Kode Billing</string>
+    <string name="sspdetailunfinish_btn_toppay">Bayar</string>
+    <string name="sspdetailunfinish_label_npwp">NPWP</string>
+    <string name="sspdetailunfinish_label_refno">No. Referensi</string>
+    <string name="sspdetailunfinish_label_sspdate">Tanggal SSP</string>
+    <string name="sspdetailunfinish_label_name">Nama WP</string>
+    <string name="sspdetailunfinish_label_address">Alamat</string>
+    <string name="sspdetailunfinish_label_kapkjs">KAP | KJS</string>
+    <string name="sspdetailunfinish_label_taxperiod">Masa Pajak</string>
+    <string name="sspdetailunfinish_label_npwppenyetor">NPWP Penyetor</string>
+    <string name="sspdetailunfinish_label_setor">Jumlah Setor</string>
+    <string name="sspdetailunfinish_label_billcode">Kode Billing</string>
+    <string name="sspdetailunfinish_btn_botcreatebillid"><b>CEK KODE BILLING</b></string>
+    <string name="sspdetailunfinish_btn_botpay"><b>BAYAR SSP</b></string>
+    <string name="sspdetailunfinish_btn_delssp">Hapus SSP</string>
+    <string name="sspdetailunpaid_label_msgdelssp">Hapus SSP?</string>
+    <string name="sspdetailunpaid_toast_billnumexpired">Kode billing sudah tidak berlaku</string>
+    <string name="sspdetailunpaid_toast_nobillnumberyet">Kode billing belum tersedia.</string>
+    <string name="sspdetailunpaid_btn_ntpn">Isi NTPN</string>
+    <string name="sspdetaildone_btn_createpdf">Buat PDF</string>
+    <string name="sspdetailunpaid_toast_successpayssp">Pembayaran SSP sukses.</string>
+    <string name="sspdetailunpaid_qhelptitle_data">Data SSP</string>
+    <string name="sspdetailunpaid_qhelpbody_data">Rincian informasi Surat Setoran Pajak.</string>
+    <string name="sspdetailunpaid_qhelptitle_botbtnpay">Tombol Bayar</string>
+    <string name="sspdetailunpaid_qhelpbody_botbtnpay">Membayar bajak dengan jumlah nominal yang tertera. Halaman akan beralih ke metode pembayaran.</string>
+
+    <string name="sspdetailfinish_page_title">BPN</string>
+    <string name="sspdetailfinish_label_done">Selesai</string>
+    <string name="sspdetailfinish_btn_viewbpn">Lihat BPN</string>
+    <string name="sspdetailfinish_btn_sendbpn">Kirim BPN</string>
+    <string name="sspdetailfinish_label_bpntitle">Bukti Penerimaan Negara</string>
+    <string name="sspdetailfinish_label_npwp">NPWP</string>
+    <string name="sspdetailfinish_label_penyetor">NPWP Penyetor</string>
+    <string name="sspdetailfinish_label_refno">No. Referensi</string>
+    <string name="sspdetailfinish_label_sspdate">Tanggal SSP</string>
+    <string name="sspdetailfinish_label_wpname">Nama WP</string>
+    <string name="sspdetailfinish_label_address">Alamat</string>
+    <string name="sspdetailfinish_label_kapkjs">KAP, KJS</string>
+    <string name="sspdetailfinish_label_taxperiod">Masa Pajak</string>
+    <string name="sspdetailfinish_label_setor">Jumlah Setor</string>
+    <string name="sspdetailfinish_label_billcode">Kode Billing</string>
+    <string name="sspdetailfinish_label_ntb">NTB</string>
+    <string name="sspdetailfinish_label_ntpn">NTPN</string>
+    <string name="sspdetailfinish_label_paydate">Tgl Bayar</string>
+    <string name="sspdetailfinish_label_bookdate">Tgl Buku</string>
+    <string name="sspdetailfinish_label_payprovider">Provider Bayar</string>
+
+    <string name="viewbpn_page_title">Bukti Penerimaan Negara</string>
+    <string name="viewbpn_label_toptext">BUKTI PENERIMAAN NEGARA</string>
+    <string name="viewbpn_label_toptextbelow">Penerimaan Pajak</string>
+    <string name="viewbpn_label_topmenteriuang">Kementerian Keuangan</string>
+    <string name="viewbpn_label_topseparator">|</string>
+    <string name="viewbpn_label_catepayment">Data Pembayaran:</string>
+    <string name="viewbpn_label_rowdatetime">Tanggal dan Jam Bayar</string>
+    <string name="viewbpn_label_rowbookdate">Tanggal Buku</string>
+    <string name="viewbpn_label_rowbankcode">Kode Cabang Bank</string>
+    <string name="viewbpn_label_rowntbbtp">NTB/BTP</string>
+    <string name="viewbpn_label_rowntpn">NTPN</string>
+    <string name="viewbpn_label_rowstan">STAN</string>
+    <string name="viewbpn_label_catesetoran">Data Setoran:</string>
+    <string name="viewbpn_label_rowbillcode">Kode Billing</string>
+    <string name="viewbpn_label_rownpwp">NPWP</string>
+    <string name="viewbpn_label_rowwpname">Nama Wajib Pajak</string>
+    <string name="viewbpn_label_rowaddress">Alamat</string>
+    <string name="viewbpn_label_rownop">Nomor Objek Pajak</string>
+    <string name="viewbpn_label_rowmataanggaran">Mata Anggaran</string>
+    <string name="viewbpn_label_rowsetorantype">Jenis Setoran</string>
+    <string name="viewbpn_label_rowtaxperiod">Masa Pajak</string>
+    <string name="viewbpn_label_rownoketetapan">Nomor ketetapan</string>
+    <string name="viewbpn_label_rowsetoran">Jumlah Setoran</string>
+    <string name="viewbpn_label_rowsetorantext">Terbilang</string>
+    <string name="viewbpn_fab_sendbpn">Kirim BPN</string>
+
+    <string name="addeditwp_page_title">Wajib Pajak</string>
+    <string name="addeditwp_btn_inquiry">Inkuiri Data Wajib Pajak</string>
+    <string name="addeditwp_btn_ntpn">Data NTPN</string>
+    <string name="addeditwp_btn_del">Hapus</string>
+    <string name="addeditwp_btn_save"><b>SIMPAN</b></string>
+    <string name="addeditwp_hint_npwp">Nomor Pokok Wajib Pajak (NPWP)</string>
+    <string name="addeditwp_hint_wpname">Nama Wajib Pajak</string>
+    <string name="addeditwp_hint_address">Alamat Wajib Pajak</string>
+    <string name="addeditwp_hint_city">Kota Wajib Pajak</string>
+    <string name="addeditwp_hint_postalcode">Kode Pos</string>
+    <string name="addeditwp_hint_phone">Telepon</string>
+    <string name="addeditwp_hint_email">Email</string>
+    <string name="addeditwp_hint_picname">Nama PIC</string>
+    <string name="addeditwp_hint_picemail">Email PIC</string>
+    <string name="addeditwp_hint_picposition">Jabatan PIC</string>
+    <string name="addeditwp_hint_picphone">Telepon PIC</string>
+    <string name="addeditwp_label_delorganization">Hapus wajib Pajak?</string>
+    <string name="addeditwp_btnmenu_ntpn">Data NPTN</string>
+    <string name="addeditwp_btnmenu_del">Hapus Wajib Pajak</string>
+    <string name="addeditwp_qhelptitle_inpwp">Kolom NPWP</string>
+    <string name="addeditwp_qhelpbody_inpwp">Isi dengan NPWP wajib pajak.</string>
+    <string name="addeditwp_qhelptitle_inpname">Kolom Nama</string>
+    <string name="addeditwp_qhelpbody_inpname">Isi dengan nama wajib pajak.</string>
+    <string name="addeditwp_qhelptitle_inpaddress">Kolom Alamat</string>
+    <string name="addeditwp_qhelpbody_inpaddress">Isi dengan alamat wajib pajak.</string>
+    <string name="addeditwp_qhelptitle_inpcity">Kolom Kota</string>
+    <string name="addeditwp_qhelpbody_inpcity">Isi dengan kota wajib pajak.</string>
+    <string name="addeditwp_qhelptitle_save">Tombol Simpan</string>
+    <string name="addeditwp_qhelpbody_save">Simpan data yang dimasukkan untuk pembuatan SSP.</string>
+
+    <string name="wplistntpn_page_title">Wajib Pajak: NTPN</string>
+    <string name="wplistntpn_btn_createspt">Buat SPT</string>
+
+    <string name="epaybriweb_page_title">BRI E-Pay</string>
+
+
+    <string name="pay_page_title">Pembayaran Pajak</string>
+    <string name="pay_label_guide">Pilih metode pembayaran</string>
+    <string name="pay_qhelptitle_taxheader">Informasi Setoran</string>
+    <string name="pay_qhelpbody_taxheader">Pastikan informasi setoran yang akan dibayar tidak keliru.</string>
+    <string name="pay_qhelptitle_paymethod">Pilihan Metode Bayar</string>
+    <string name="pay_qhelpbody_paymethod">Klik metode bayar untuk memulai pembayaran.</string>
+
+    <string name="paytax0kjs_page_title">Jenis Setoran</string>
+    <string name="paytax0kjs_label_taxtitlesub">Kode Akun Pajak (KAP): %1$s</string>
+    <string name="paytax0kjs_recent_code">Kode terpilih sebelumnya</string>
+    <string name="paytaxkjs_btnmenu_reloadkjs">Reload KJS</string>
+    <string name="paytaxkjs_qhelptitle_filter">Filter</string>
+    <string name="paytaxkjs_qhelpbody_filter">Filter data untuk memudahkan pencarian.</string>
+    <string name="paytaxkjs_qhelptitle_kjs">Kode Jenis Pajak</string>
+    <string name="paytaxkjs_qhelpbody_kjs">Pilih Kode Jenis Pajak untuk SSP yang akan dibuat.</string>
+
+    <string name="paytaxwp_page_title">Bayar Pajak: Wajib Pajak</string>
+    <string name="paytaxwp_label_taxkap">KAP: %1$s, KJS: %2$s</string>
+    <string name="paytaxwp_label_guide">Pilih Wajib Pajak</string>
+    <string name="paytaxwp_qhelptitle_add">Tombol Tambah</string>
+    <string name="paytaxwp_qhelpbody_add">Tambahkan data WP untuk kelengkapan SSP.</string>
+    <string name="paytaxwp_qhelptitle_wplist">Daftar WP</string>
+    <string name="paytaxwp_qhelpbody_wplist">Pilihan data WP setelah ditambahkan.</string>
+
+    <string name="paytax2period_page_title">Masa Pajak</string>
+    <string name="paypphperiod_label_taxkap">%1$s, KAP: %2$s, KJS: %3$s</string>
+    <string name="paypphperiod_label_guide">Pilih Masa Pajak</string>
+    <string name="paypphperiod_hint_month0">Masa Pajak Awal</string>
+    <string name="paypphperiod_hint_month1">Masa Pajak Akhir</string>
+    <string name="paypphperiod_hint_year">Tahun Pajak</string>
+    <string name="paytaxperiodsetor_label_guide_nosk_nop">No. SK dan NOP</string>
+    <string name="paypphperiod_btn_next"><b>SELANJUTNYA</b></string>
+    <string name="paytaxperiod_qhelptitle_month0">Bulan Awal</string>
+    <string name="paytaxperiod_qhelpbody_month0">Harus lebih kecil atau sama dengan bulan akhir.</string>
+    <string name="paytaxperiod_qhelptitle_month1">Bulan Akhir</string>
+    <string name="paytaxperiod_qhelpbody_month1">Harus lebih besar atau sama dengan bulan awal.</string>
+    <string name="paytaxperiod_qhelptitle_year">Tahun Pajak</string>
+    <string name="paytaxperiod_qhelpbody_year">Tahun pajak untuk SSP yang akan dibuat.</string>
+    <string name="paytaxperiod_qhelptitle_btnnext">Tombol Selanjutnya</string>
+    <string name="paytaxperiod_qhelpbody_btnnext">Menuju ke tahap pengisian nominal setoran dalam pembuatan SSP.</string>
+
+    <string name="paytax3setor_page_title">Jumlah Setor</string>
+    <string name="paytaxsetor_label_taxkap">%1$s, KAP: %2$s, KJS: %3$s, %4$s</string>
+    <string name="paytaxsetor_label_guide">Tentukan Jumlah Pajak yang akan disetor</string>
+    <string name="paytaxsetor_btn_calculatesetor">Hitung Tarif 0,5 %</string>
+    <string name="paytaxsetor_hint_setoramount">Jumlah Setor</string>
+    <string name="paytaxsetor_hint_terbilang">Terbilang</string>
+    <string name="paytaxsetor_btn_next"><b>SELANJUTNYA</b></string>
+    <string name="paytax3setor_dialogsetengah_title">Masukkan Penghasilan Bruto</string>
+    <string name="paytax3setor_dialogsetengah_btncalculate">Hitung 0,5%</string>
+    <string name="paytax3setorsetengah_hint_bruto">Bruto</string>
+    <string name="paytaxsetor_qhelptitle_calculate">Hitung Setengah Persen</string>
+    <string name="paytaxsetor_qhelpbody_calculate">Hitung setengah persen dari nilai di kolom jumlah setor.</string>
+    <string name="paytaxsetor_qhelptitle_setor">Kolom Jumlah Setor</string>
+    <string name="paytaxsetor_qhelpbody_setor">Jumlah nominal setor dalam SSP.</string>
+    <string name="paytaxsetor_qhelptitle_terbilang">Kolom Terbilang</string>
+    <string name="paytaxsetor_qhelpbody_terbilang">Menampilkan kalimat nominal untuk memastikan jumlah yang diisi.</string>
+    <string name="paytaxsetor_qhelptitle_btnnext">Tombol Selanjutnya</string>
+    <string name="paytaxsetor_qhelpbody_btnnext">Menuju ke tahap pengisian SK dan NOP dalam pembuatan SSP.</string>
+
+    <string name="paytaxsknop_page_title">No. SK / NOP / Penyetor</string>
+    <string name="paytaxsknop_label_taxkap">%1$s, KAP: %2$s, KJS: %3$s, %4$s</string>
+    <string name="paytaxsknop_label_guide">Isi No. SK / NOP / Penyetor bila diperlukan</string>
+    <string name="paypphsksop_hint_sk">Nomor SK</string>
+    <string name="paypphsksop_hint_nop">NOP</string>
+    <string name="paypphsknop_hint_npwppenyetor">Subjek Pajak (NPWP Penyetor)</string>
+    <string name="paytaxsknop_hint_generateidbil">Buat ID Billing</string>
+    <string name="paytaxsknop_btn_next"><b>SELANJUTNYA</b></string>
+    <string name="paytaxsknop_qhelptitle_sk">Kolom SK</string>
+    <string name="paytaxsknop_qhelpbody_sk">Diisi dengan Surat Keputusan.</string>
+    <string name="paytaxsknop_qhelptitle_nop">Kolom NOP</string>
+    <string name="paytaxsknop_qhelpbody_nop">Diisi dengan Nomor Objek Pajak.</string>
+    <string name="paytaxsknop_qhelptitle_penyetor">NPWP Penyetor</string>
+    <string name="paytaxsknop_qhelpbody_penyetor">Diisi dengan NPWP yang menyetorkan SSP.</string>
+    <string name="paytaxsknop_qhelptitle_btnnext">Tombol Selanjutnya</string>
+    <string name="paytaxsknop_qhelpbody_btnnext">Menuju ke tahap verifikasi dalam pembuatan SSP.</string>
+
+    <string name="paytaxsummary_page_title">Bayar Pajak: SSP</string>
+    <string name="paytaxsummary_btn_topsave">Simpan</string>
+    <string name="paytaxsummary_btn_topinquiry">Inkuiri</string>
+    <string name="paytaxsummary_btn_topbillcode">Kode Billing</string>
+    <string name="paypphsummary_btn_toppay">Bayar</string>
+    <string name="paypphsummary_label_npwp">NPWP</string>
+    <string name="paypphsummary_label_name">Nama WP</string>
+    <string name="paypphsummary_label_address">Alamat</string>
+    <string name="paypphsummary_label_kapkjs">KAP | KJS</string>
+    <string name="paypphsummary_label_taxperiod">Masa Pajak</string>
+    <string name="paypphsummary_label_nosk">No. SK</string>
+    <string name="paypphsummary_label_nop">NOP</string>
+    <string name="paypphsummary_label_npwppenyetor">NPWP Penyetor</string>
+    <string name="paypphsummary_label_setor">Jumlah Setor</string>
+    <string name="paypphsummary_label_billcode">Kode Billing Pajakku</string>
+    <string name="paypphsummary_btn_save"><b>SIMPAN</b></string>
+    <string name="paypphsummary_btn_pay">Bayar</string>
+    <string name="paypphsummary_label_dialogconfirmpayssp">Bayar SSP %1$s</string>
+    <string name="paypphsummary_toast_savedssp">SSP tersimpan</string>
+    <string name="paypphsummary_toast_successpayssp">Transaksi selesai. Cek status di data transaksi.</string>
+    <string name="paytaxsummary_qhelptitle_list">Data SSP</string>
+    <string name="paytaxsummary_qhelpbody_list">Data yang sebelumnya dimasukkan untuk disimpan sebagai SSP.</string>
+    <string name="paytaxsummary_qhelptitle_btnsave">Tombol Simpan</string>
+    <string name="paytaxsummary_qhelpbody_btnsave">Menjalankan proses simpan data SSP.</string>
+
+    <string name="taxtypelist_page_title">Daftar Tipe Pajak</string>
+
+    <string name="mainspt_page_title">SPT Pajak</string>
+
+    <string name="spt0intro_btn_next">Selanjutnya</string>
+
+    <string name="spt0spttype_label_guide">Pilih jenis SPT yang akan dibuat.</string>
+    <string name="spt0spttype_labelinfo_1770">Formulir SPT OP 1770 UMKM ini digunakan khusus untuk mengisi data laporan perpajakan untuk <b>pengusaha perorangan mikro, kecil, dan menengah (UMKM)</b> dengan nilai <b>omset kurang dari 4,8 miliar rupiah per tahun, bukan pegawai/karyawan</b> dan <b>bukan pekerja profesional.</b></string>
+    <string name="spt0spttype_labelaliaslist_1770">SPT Tahunan 1770 PPh OP</string>
+
+    <string name="spt1wp_label_guide">Pilih wajib pajak sebagai pelapor SPT.</string>
+
+    <string name="spt2year_label_guide">Isi tahun pajak dan status SPT.</string>
+    <string name="spt1year_hint_year">Tahun Pajak</string>
+    <string name="spt1year_hint_pembetulanke">Pembetulan Ke</string>
+    <string name="spt2year_label_pembetulan">Status SPT</string>
+    <string name="spt1year_inp_pembetulannormal">Normal</string>
+    <string name="spt1year_inp_pembetulanke">Pembetulan</string>
+    <string name="spt2year_btn_createdraft">Selanjutnya</string>
+
+    <string name="spt4wpextra_label_guide">Isi identitas tambahan wajib pajak</string>
+    <string name="spt4wpextra_inp_worktype">Jenis Usaha / Pekerjaan Bebas</string>
+    <string name="spt4wpextra_inp_klu">KLU (Klasifikasi Lapangan Usaha)</string>
+    <string name="spt4wpextra_inp_statuspasutri">Status Kewajiban Perpajakan Suami-istri</string>
+    <string name="spt4wpextra_inp_npwppasutri">NPWP Istri / Suami</string>
+    <string name="spt4summary_rowinfo_wpname">Nama WP</string>
+    <string name="spt4wpextra_btn_next">Selanjutnya</string>
+
+    <string name="spt5bruto_label_guide">Isi daftar peredaran bruto dan PPh final</string>
+    <string name="spt5bruto_btn_next">Selanjutnya</string>
+
+    <string name="sptdetail_page_title">Surat Pemberitahuan (SPT)</string>
+    <string name="sptdetail_rowinfo_spttype">Jenis SPT</string>
+    <string name="sptdetail_rowinfo_statusspt">Status SPT</string>
+    <string name="sptdetail_rowinfo_year">Tahun Pajak</string>
+    <string name="sptdetail_rowinfo_npwp">NPWP</string>
+    <string name="sptdetail_rowinfo_wpname">Nama WP</string>
+    <string name="sptdetail_btn_bot">Lapor</string>
+
+    <string name="about_page_title">Tentang Aplikasi</string>
+    <string name="about_label_version">Versi %1$s</string>
+    <string name="about_label_versioncode">Kode Versi %1$d</string>
+    <string name="about_label_builddate">Waktu Build %1$s</string>
+
+    <string name="paypphmethod_page_title">Pembayaran Pajak</string>
+    <string name="paypphmethod_label_guide">Pilih metode pembayaran&#8230;</string>
+    <string name="paypphmethod_label_taxkap">%1$s, KAP: %2$s, KJS: %3$s, %4$s</string>
+    <string name="paypphmethod_label_tupaisaldo">Tupai Saldo</string>
+    <string name="paypphmethod_label_va">VA: %1$s</string>
+    <string name="paypphmethod_label_payamount">Total Pembayaran %1$s</string>
+    <string name="paypphmethod_typebar_tupaisaldo">TUPAI SALDO</string>
+    <string name="paypphmethod_btn_otherpay">Metode pembayaran lainnya&#8230;</string>
+    <string name="paypphmethod_typebar_transfer">TRANSFER BANK</string>
+    <string name="paypphmethod_btn_transfermandiri">Bank Mandiri</string>
+    <string name="paypphmethod_btn_transferbca">Bank BCA</string>
+    <string name="paypphmethod_btn_transferbni">Bank BNI</string>
+    <string name="paypphmethod_typebar_cc">KARTU KREDIT</string>
+    <string name="paypphmethod_btn_ccvisafriend">Bank BNI</string>
+
+    <string name="paypphresult_page_title">Pembayaran Pajak</string>
+    <string name="paypphresult_label_msgsuccess">Selamat, Pembayaran Pajak Anda telah berhasil!</string>
+    <string name="paypphresult_label_msgfail">Pembayaran Gagal! Saldo Tupai Anda Tidak Mencukupi.</string>
+    <string name="paypphresult_btn_detail">Lihat Detail</string>
+    <string name="paypphresult_btn_close">Tutup</string>
+
+    <string name="paypulsa_page_title">Isi Pulsa</string>
+    <string name="paypulsa_label_guide">Masukkan Nomor Handphone</string>
+    <string name="paypulsa_hint_phone">Nomor Handphone</string>
+    <string name="paypulsa_catelabel_nominal">Pilihan Nominal Pulsa</string>
+
+    <string name="paytokenpln_page_title">Token PLN</string>
+    <string name="paytokenpln_label_guide">Masukkan Nomor Pelanggan dan Nominal</string>
+    <string name="paytokenpln_hint_nopelanggan">Nomor Pelanggan</string>
+    <string name="paytokenpln_hint_tokenamount">Nominal Token</string>
+    <string name="paytokenpln_btn_pay">Bayar</string>
+
+    <string name="paybpjs_page_title">Iuran BPJS Kesehatan</string>
+    <string name="paybpjs_label_guide">Masukkan Data Iuran BPJS Kesehatan</string>
+    <string name="paybpjs_hint_vanumber">Nomor VA BPJS Kesehatan</string>
+    <string name="paybpjs_hint_monthsum">Pilih banyaknya bulan iuran yang akan dibayar</string>
+    <string name="paybpjs_btn_pay">Bayar</string>
+
+    <string name="paypascabayar_page_title">Tagihan Pasca Bayar</string>
+    <string name="paypascabayar_label_guide">Masukkan Nomor Pelanggan</string>
+    <string name="paypascabayar_hint_customernumber">Nomor Pelanggan</string>
+    <string name="paypascabayar_btn_pay">Bayar</string>
+
+    <string name="paytagihanpln_page_title">Tagihan PLN</string>
+    <string name="paytagihanpln_label_guide">Masukkan Nomor Pelanggan</string>
+    <string name="paytagihanpln_hint_customernumber">Nomor Pelanggan</string>
+    <string name="paytagihanpln_btn_pay">Bayar</string>
+
+    <string name="paymentmethod_page_titletopup">Pembayaran Top Up Saldo</string>
+    <string name="paymentmethod_page_titlepaytax">Pembayaran Pajak</string>
+    <string name="paymentmethod_label_guide">Pilih metode pembayaran&#8230;</string>
+    <string name="paymentmethod_label_saldoname">Tupai Saldo</string>
+    <string name="paymentmethod_btn_otherpay">Metode pembayaran lainnya&#8230;</string>
+    <string name="paymentmethod_btn_transfermandiri">Bank Mandiri</string>
+    <string name="paymentmethod_btn_transferbca">Bank BCA</string>
+    <string name="paymentmethod_btn_transferbni">Bank BNI</string>
+    <string name="paymentmethod_btn_ccvisafriend">Visa, Master Card, GPN</string>
+    <string name="paymentmethod_catelabel_saldo">TUPAI SALDO</string>
+    <string name="paymentmethod_catelabel_transfer">TRANSFER BANK</string>
+    <string name="paymentmethod_catelabel_cc">KARTU KREDIT</string>
+
+    <string name="paymentguide_page_titlemandiri">Transfer Bank Mandiri</string>
+    <string name="paymentguide_page_titlebca">Transfer Bank BCA</string>
+    <string name="paymentguide_page_titlebni">Transfer Bank BNI</string>
+    <string name="paymentguide_page_titlesinarmas">Transfer Bank Sinarmas</string>
+    <string name="paymentguide_label_productname">Nama Produk</string>
+    <string name="paymentguide_label_price">Harga</string>
+    <string name="paymentguide_label_pricetransfer">Jumlah Transfer</string>
+    <string name="paymentguide_label_payguide">Petunjuk pembayaran</string>
+
+    <string name="paymentcc_page_title">Kartu Kredit</string>
+    <string name="paymentcc_label_productname">Nama Produk</string>
+    <string name="paymentcc_label_price">Harga</string>
+    <string name="paymentcc_label_pricetransfer">Jumlah Bayar</string>
+    <string name="paymentcc_label_guide">Data pembayaran</string>
+    <string name="paymentcc_hint_cardnum">Nomor Kartu</string>
+    <string name="paymentcc_hint_cardowner">Nama Pemegang Kartu</string>
+    <string name="paymentcc_hint_address">Alamat</string>
+    <string name="paymentcc_hint_validdate">Berlaku sampai</string>
+    <string name="paymentcc_hint_cvv">CVV</string>
+    <string name="paymentcc_btn_pay">Bayar</string>
+
+    <string name="paymentresult_page_titletopup">Top Up Status</string>
+    <string name="paymentresult_page_titletax">Pembayaran Pajak</string>
+    <string name="paymentresult_label_msgsuccess">Selamat, Pembayaran Pajak Anda telah berhasil!</string>
+    <string name="paymentresult_label_msgfail">Pembayaran Gagal! Saldo Tupai Anda Tidak Mencukupi.</string>
+    <string name="paymentresult_btn_detail">Lihat Detail</string>
+    <string name="paymentresult_btn_close">Tutup</string>
+
+    <string name="spttype_page_title">Jenis SPT</string>
+
+    <string name="activityspt_page_title">Edit SPT</string>
+
+    <string name="paysspbulk_page_title">Order Pembayaran SSP</string>
+    <string name="paysspbulk_label_total">Total Order</string>
+    <string name="paysspbulk_btn_pay">Bayar</string>
+
+    <string name="createcompany_page_title">Perusahaan</string>
+    <string name="createcompany_label_guide">Sebelum mengisi data wajib pajak, Anda harus menentukan data perusahaan</string>
+    <string name="createcompany_hint_name">Nama Perusahaan</string>
+    <string name="createcompany_hint_address">Alamat</string>
+    <string name="createcompany_hint_city">Kota</string>
+    <string name="createcompany_hint_phone">Telepon</string>
+    <string name="createcompany_hint_email">Email</string>
+    <string name="createcompany_hint_npwp">NPWP</string>
+    <string name="createcompany_hint_postalcode">Kode Pos</string>
+    <string name="createcompany_hint_fax">Fax</string>
+    <string name="createcompany_hint_website">Website</string>
+    <string name="createcompany_hint_industry">Industri</string>
+    <string name="createcompany_btn_save">Simpan</string>
+
+    <string name="topupweb_page_title">Top-up</string>
+
+    <string name="inputotp_page_title">Aktivasi Mobile Cash</string>
+    <string name="inputotp_label_guidephone">Memerlukan nomor telepon untuk mendapatkan OTP melalui SMS.</string>
+    <string name="inputotp_label_guideotp">Masukkan kode yang didapat dari SMS.</string>
+    <string name="inputotp_hint_phone">Nomor Telepon</string>
+    <string name="inputotp_hint_otp">OTP</string>
+    <string name="inputotp_toast_successotp">Anda sudah bisa melakukan transaksi.</string>
+    <string name="inputotp_btn_send">Verifikasi</string>
+
+    <string name="sendotp_page_title">Aktivasi Mobile Cash</string>
+    <string name="sendotp_hint_otp">OTP</string>
+    <string name="sendotp_toast_wrongotp">OTP salah.</string>
+    <string name="sendotp_label_guideotp">Masukkan kode yang didapat dari SMS.</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    // NEW ONE
+
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="logo">Logo</string>
+    <string name="login">Login</string>
+    <string name="register">Daftar</string>
+    <string name="forgot_password">Lupa Sandi</string>
+    <string name="transaction_password">password transaksi</string>
+    <string name="verify_transaction_password">verifikasi password transaksi</string>
+    <string name="send_password_via_email">kirim password via email</string>
+    <string name="email">Email</string>
+    <string name="id_doku">ID Doku</string>
+    <string name="lainnya">Lainnya</string>
+    <string name="menu_ppob">PPOB</string>
+    <string name="top_up_ppob">Top Up PPOB</string>
+    <string name="history">History</string>
+    <string name="financial">Financial</string>
+    <string name="support">Support</string>
+    <string name="payment_and_top_up">Pembayaran Dan Top Up</string>
+    <string name="icon">Icon</string>
+    <string name="payment">Payment</string>
+    <string name="asuransi">Asuransi</string>
+    <string name="bpjs">BPJS</string>
+    <string name="internet_dan_tv_kabel">Internet Dan TV Kabel</string>
+    <string name="multi_finance">Multi Finance</string>
+    <string name="pdam">PDAM</string>
+    <string name="paytv">TV Kabel</string>
+    <string name="go_pay">GO PAY</string>
+    <string name="grab">GRAB</string>
+    <string name="token_listrik_prepaid">Token Prepaid</string>
+    <string name="pulsa_prabayar">Pulsa Prabayar</string>
+    <string name="pulsa_pascabayar">Paket Data</string>
+    <string name="token_listrik">Token Post Paid</string>
+    <string name="tagihan_listrik">Non Tag List</string>
+    <string name="e_money_mandiri">E-Money Mandiri</string>
+    <string name="doku_wallet">DOKU Wallet</string>
+    <string name="top_up">Top Up</string>
+    <string name="nominal">Nominal</string>
+    <string name="pulsa">Pulsa</string>
+    <string name="internet">Internet</string>
+    <string name="no_hp">No Hp</string>
+    <string name="teruskan">Teruskan</string>
+    <string name="validation_payment">Konfrimasi Pembelian</string>
+    <string name="harga">Harga</string>
+    <string name="no_ponsel">No Ponsel</string>
+    <string name="saldo_awal">Saldo Awal</string>
+    <string name="sisa_saldo">Sisa Saldo</string>
+    <string name="markup_admin">Markup Admin</string>
+    <string name="post_paid_100">100</string>
+    <string name="batalkan_pembelian">Batalkan Pembelian</string>
+    <string name="beli">Beli</string>
+    <string name="logout">Logout</string>
+    <string name="id_pelanggan">ID Pelanggan</string>
+    <string name="nama_pelanggan">Nama Pelanggan</string>
+    <string name="biyaya_admin">Biyaya Admin</string>
+    <string name="jenis_pembelian">Jenis Pembelian</string>
+    <string name="post_paid_credit_2500">2500</string>
+    <string name="periode_tagihan">Periode Tagihan</string>
+    <string name="nomor_meter">Nomor Meter</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <!--    <string name="hello_blank_fragment">Hello blank fragment</string>-->
+    <string name="dashboard">Dashboard</string>
+    <string name="bonus">Bonus</string>
+    <string name="profil">Profil</string>
+    <string name="pin">PIN</string>
+    <string name="network">Network</string>
+    <string name="withdraw">Withdraw</string>
+    <string name="menu">Menu</string>
+    <string name="title_activity_pulsa">PulsaActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string-array name="default_provider">
+        <item>Pilih Provider</item>
+    </string-array>
+
+    <string-array name="default_harga">
+        <item>Pilih Harga</item>
+    </string-array>
+
+    <string-array name="daftar_provider">
+        <item>Pilih Provider</item>
+        <item>TELKOMSEL</item>
+        <item>INDOSAT</item>
+        <item>AXIS</item>
+        <item>TRI</item>
+        <item>SMARTFREN</item>
+        <item>XL</item>
+        <item>BOLT</item>
+    </string-array>
+
+    <string-array name="daftar_harga">
+        <item>Pilih Harga</item>
+        <item>Rp 5.000</item>
+        <item>Rp 10.000</item>
+        <item>Rp 15.000</item>
+        <item>Rp 20.000</item>
+        <item>Rp 25.000</item>
+        <item>Rp 50.000</item>
+        <item>Rp 100.000</item>
+    </string-array>
+
+    <string-array name="harga_paket">
+        <item>Pilih Paket</item>
+        <item>1 Hari</item>
+        <item>3 Hari</item>
+        <item>5 Hari</item>
+        <item>7 Hari</item>
+        <item>30 Hari</item>
+    </string-array>
+
+    <string-array name="daftar_pdam">
+        <item>Pilih Jenis PDAM</item>
+        <item>PDAM PALYJA</item>
+        <item>PDAM AETRA</item>
+        <item>PDAM SEMARANG</item>
+        <item>PDAM TIRNATI MEDAN</item>
+    </string-array>
+
+    <string-array name="tv_kabel">
+        <item>Pilih Jenis TV Kabel</item>
+        <item>Trans Vision</item>
+        <item>MNC Group</item>
+    </string-array>
+
+    <string-array name="multi_finance">
+        <item>Pilih Jenis Multi Finance</item>
+        <item>WOM</item>
+        <item>MCF/MAF</item>
+        <item>BAF</item>
+        <item>FIF</item>
+    </string-array>
+
+    <string-array name="daftar_bpjs">
+        <item>Pilih Durasi Pembayaran</item>
+        <item>BPJS KESEHATAN 1 BULAN</item>
+        <item>BPJS KESEHATAN 2 BULAN</item>
+        <item>BPJS KESEHATAN 3 BULAN</item>
+        <item>BPJS KESEHATAN 4 BULAN</item>
+        <item>BPJS KESEHATAN 5 BULAN</item>
+    </string-array>
+
+    <drawable name="darkgrey">#606060</drawable>
+         <drawable name="red">#C11B17</drawable>
+
+
+
+</resources>

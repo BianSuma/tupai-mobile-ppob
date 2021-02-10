@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/layout_content_pad">
+
+    <Spinner
+        android:id="@+id/dialogfind_spin_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <com.pajakku.tupaimobile.component.AppEditText
+        android:id="@+id/dialogfind_inp_query"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialogfind_spin_field"
+        android:layout_marginTop="@dimen/holo_shadow_pad"
+        app:hint="@string/comp_finddialog_inp_query" />
+
+</RelativeLayout>

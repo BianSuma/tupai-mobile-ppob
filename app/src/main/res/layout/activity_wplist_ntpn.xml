@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_wplist_nptn"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.pajakku.tupaimobile.activity.WPListNPTNActivity">
+
+    <com.pajakku.tupaimobile.component.AppActionBar
+        android:id="@+id/wplistntpn_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="@string/wplistntpn_page_title"
+        />
+
+    <ListView
+        android:id="@+id/wplistntpn_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!--<Button-->
+        <!--style="@style/AppButton"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/wplistntpn_btn_createspt"/>-->
+
+</LinearLayout>

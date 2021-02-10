@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.pajakku.tupaimobile.fragment.ProfileHomeFragment">
+
+    <!--<com.pajakku.tupaimobile.component.AppActionBar-->
+        <!--android:id="@+id/profhome_actionbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/actionBarSize"-->
+        <!--app:title="@string/profhome_label_page_title"-->
+        <!--/>-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--<com.pajakku.tupaimobile.component.TopupWidget-->
+                <!--android:id="@+id/profhome_topupwidget"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content" />-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.pajakku.tupaimobile.component.ProfileHomeLabel
+                    android:id="@+id/profhome_quickrow_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:left_icon="@drawable/profhome_rowicon_name"
+                    app:var_text="@string/profhome_label_row_name"
+                    />
+
+                <ProgressBar
+                    android:id="@+id/profhome_progressbar"
+                    style="@android:style/Widget.ProgressBar.Small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="true"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+            <com.pajakku.tupaimobile.component.ProfileHomeLabel
+                android:id="@+id/profhome_quickrow_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:left_icon="@drawable/profhome_rowicon_phone"
+                app:var_text="@string/profhome_label_row_phone"
+                />
+
+            <com.pajakku.tupaimobile.component.ProfileHomeLabel
+                android:id="@+id/profhome_quickrow_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:left_icon="@drawable/profhome_rowicon_email"
+                app:var_text="@string/profhome_label_row_email"
+                />
+
+            <!--<com.pajakku.tupaimobile.component.ProfileHomeButton-->
+                <!--android:id="@+id/profhome_btn_wp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/button_height"-->
+                <!--android:layout_marginTop="@dimen/holo_shadow_pad"-->
+                <!--app:left_img="@drawable/profhome_btnicon_wp"-->
+                <!--app:text="@string/profhome_btn_wp"-->
+                <!--/>-->
+
+            <!--<com.pajakku.tupaimobile.component.ProfileHomeButton-->
+                <!--android:id="@+id/profhome_btn_transactionlog"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/button_height"-->
+                <!--app:left_img="@drawable/profhome_btnicon_transactionlog"-->
+                <!--app:text="@string/profhome_btn_transactionlog"-->
+                <!--/>-->
+        </LinearLayout>
+    </ScrollView>
+
+    <!--<com.pajakku.tupaimobile.component.ProfileHomeButton-->
+        <!--android:id="@+id/profhome_btn_logout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/button_height"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--app:left_img="@drawable/ic_logout"-->
+        <!--app:right_arrow="false"-->
+        <!--app:text="@string/profhome_btn_logout"-->
+        <!--/>-->
+
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<html>
+<head>
+    <title>BRI EPay</title>
+    <style type="text/css">
+    #login {
+        position: absolute;
+        display: block;
+    }
+    #loginForm {
+        position: absolute;
+        display: block;
+        left: 190px;  top: 230px;
+    }
+    #loginBtn {
+        position: absolute;
+        display: block;
+        left: 290px; top: 440px;
+        width: 800px;
+    }
+
+    #confirm {
+        position: absolute;
+        display: none;
+    }
+    #confirmPass {
+        position: absolute;
+        display: none;
+        left: 330px;  top: 390px;
+        width: 160px; height: 25px
+    }
+    #paycode {
+        position: absolute;
+        display: none;
+        left: 330px;  top: 480px;
+        width: 160px; height: 25px
+    }
+    #confirmBtn {
+        position: absolute;
+        display: none;
+        left: 370px;  top: 690px;
+        width: 800px;
+    }
+</style>
+</head>
+<body>
+</body>
+<img id="login" src="simulation_login.png" />
+<div id="loginForm">
+    User ID<br />
+    <input id="loginUser" type="text" style="width:200px;height:30px" /><br />
+    Password<br />
+    <input id="loginPass" type="password" style="width:200px;height:30px" />
+</div>
+<div id="loginBtn">
+    <input type="button" value="Clear" style="width:100px;height:30px" onclick="clickClear()" />
+    &nbsp;
+    <input type="button" value="submit" onclick="clickLogin()" style="width:100px;height:30px" />
+</div>
+<img id="confirm" src="simulation_confirmpay.png" />
+<input id="confirmPass" type="password" />
+<input id="paycode" type="text" />
+<div id="confirmBtn">
+    <input type="button" value="Cancel" onclick="clickCancel()" style="width:100px;height:28px"/>
+    &nbsp;
+    <input type="button" value="Confirm" onclick="clickConfirm()" style="width:100px;height:28px" />
+</div>
+<script type="text/javascript">
+    function clickLogin(){
+        var obj = document.getElementById("login");
+        obj.style.display = "none";
+        obj = document.getElementById("loginForm");
+        obj.style.display = "none";
+        obj = document.getElementById("loginBtn");
+        obj.style.display = "none";
+
+        obj = document.getElementById("confirm");
+        obj.style.display = "block";
+        obj = document.getElementById("confirmPass");
+        obj.style.display = "block";
+        obj = document.getElementById("paycode");
+        obj.style.display = "block";
+        obj = document.getElementById("confirmBtn");
+        obj.style.display = "block";
+    }
+    function clickCancel(){
+        var obj = document.getElementById("login");
+        obj.style.display = "block";
+        obj = document.getElementById("loginForm");
+        obj.style.display = "block";
+        obj = document.getElementById("loginBtn");
+        obj.style.display = "block";
+
+        obj = document.getElementById("confirm");
+        obj.style.display = "none";
+        obj = document.getElementById("confirmPass");
+        obj.style.display = "none";
+        obj = document.getElementById("paycode");
+        obj.style.display = "none";
+        obj = document.getElementById("confirmBtn");
+        obj.style.display = "none";
+    }
+    function clickClear(){
+        var obj = document.getElementById("loginUser");
+        obj.value = "";
+        var obj = document.getElementById("loginPass");
+        obj.value = "";
+    }
+    function clickConfirm(){
+        location.href = "http://redirect/";
+    }
+</script>
+</html>

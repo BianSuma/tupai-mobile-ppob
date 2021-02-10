@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/layout_content_pad"
+    android:background="@drawable/bg_listitem"
+    >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/rowspt_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/global_img_desc"
+            android:padding="@dimen/layout_content_pad"
+            />
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/rowspt_icon"
+            android:paddingLeft="5dp">
+
+            <TextView
+                android:id="@+id/rowspt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/rowspt_npwp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rowspt_name"
+                android:visibility="gone"
+                />
+            <TextView
+                android:id="@+id/rowspt_sptinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rowspt_npwp"
+                android:textColor="#adadad"
+                />
+            <TextView
+                android:id="@+id/rowspt_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rowspt_sptinfo"
+                android:textStyle="bold"
+                android:textColor="@color/rowssp_mount_billid"
+                android:textSize="@dimen/rowssp_fontsize_amountbillid"
+                />
+            <TextView
+                android:id="@+id/rowspt_pembetulan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/rowspt_amount"
+                android:layout_alignTop="@+id/rowspt_amount"
+                android:layout_marginLeft="@dimen/holo_shadow_pad"
+                android:textSize="@dimen/rowssp_fontsize_amountbillid"
+                />
+            <TextView
+                android:id="@+id/rowspt_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rowspt_amount"
+                android:textColor="#ff7d28"
+                android:visibility="gone"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/rowspt_rightarrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_rightarrow"
+        android:contentDescription="@string/global_img_desc"
+        />
+
+    <!--<CheckBox-->
+        <!--android:id="@+id/rowspt_selected"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:focusable="false"-->
+        <!--/>-->
+
+</RelativeLayout>

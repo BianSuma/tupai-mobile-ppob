@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/layout_content_pad"
+    android:background="@drawable/bg_listitem"
+    >
+
+    <ImageView
+        android:id="@+id/rowtaxtype_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/global_img_desc"
+        android:padding="@dimen/layout_content_pad"
+        />
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/rowtaxtype_iconlabel_initname"-->
+        <!--android:layout_width="@dimen/button_height"-->
+        <!--android:layout_height="@dimen/button_height"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:gravity="center"-->
+        <!--android:background="@drawable/bg_labelcircle_wpinitname"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textSize="20sp"-->
+        <!--/>-->
+
+    <TextView
+        android:id="@+id/rowtaxtype_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/rowtaxtype_icon"
+        android:layout_marginLeft="@dimen/layout_content_pad"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:id="@+id/rowtaxtype_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rowtaxtype_name"
+        android:layout_below="@+id/rowtaxtype_name"
+        android:textSize="13sp"
+        />
+
+    <ImageView
+        android:id="@+id/rowtaxtype_righticon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_rightarrow"
+        android:contentDescription="@string/global_img_desc"
+        />
+
+</RelativeLayout>

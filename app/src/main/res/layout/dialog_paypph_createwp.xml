@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <com.pajakku.tupaimobile.component.DialogTopBar
+        android:id="@+id/dialogpaypphcreatewp_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="@string/dialogpaypphcreatewp_page_title"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/layout_content_pad"
+            >
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_npwp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/dialogpaypphcreatewp_inp_npwp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/dialogpaypphcreatewp_hint_npwp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--<Button-->
+                <!--android:id="@+id/dialogpaypphcreatewp_btn_inquiry"-->
+                <!--style="@style/AppButton"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:drawableLeft="@drawable/ic_sspdetailunfinish_inquiry"-->
+                <!--android:text="@string/dialogpaypphcreatewp_btn_inquiry"/>-->
+
+            <LinearLayout
+                android:id="@+id/dialogpaypphcreatewp_btn_inquiry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:background="@drawable/bg_btn_common"
+                android:padding="@dimen/layout_content_pad"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:drawableLeft="@drawable/ic_sspdetailunfinish_inquiry"
+                    android:drawablePadding="@dimen/layout_content_pad"
+                    android:text="@string/dialogpaypphcreatewp_btn_inquiry"/>
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_wpname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/dialogpaypphcreatewp_inp_wpname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/dialogpaypphcreatewp_hint_wpname"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/dialogpaypphcreatewp_inp_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/dialogpaypphcreatewp_hint_address"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/dialogpaypphcreatewp_inp_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/dialogpaypphcreatewp_hint_city"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/dialogpaypphcreatewp_btn_save"
+                style="@style/AppButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layout_content_pad"
+                android:text="@string/dialogpaypphcreatewp_btn_save"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
